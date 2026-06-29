@@ -135,22 +135,7 @@ function Navbar() {
                   />
 
                   <Text fw={800} size="xl">
-                    {/* <span
-                      style={{
-                        color:
-                          theme.colors.orange[5],
-                      }}
-                    >
-                      IISJ
-                    </span>
-
-                    <span
-                      style={{
-                        color: "white",
-                      }}
-                    >
-                      Collective
-                    </span> */}
+                
                   </Text>
                 </Group>
               </motion.div>
