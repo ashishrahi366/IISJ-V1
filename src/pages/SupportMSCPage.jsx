@@ -24,6 +24,7 @@ import {
   FaHeart,
   FaUsers,
 } from "react-icons/fa";
+import { sendMSCSupportEmail } from "../helper/mailer";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
@@ -58,8 +59,9 @@ export default function SupportMSCPage() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const trimmedEmail = email.trim();
 
     if (!trimmedEmail) {
@@ -75,12 +77,28 @@ export default function SupportMSCPage() {
     }
 
     setError("");
-    setSubmitted(true);
-    setEmail("");
+    setLoading(true);
 
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 3000);
+    try {
+      console.log('fucn call')
+      const result = await sendMSCSupportEmail(trimmedEmail);
+
+      if (result.success) {
+        setSubmitted(true);
+        setEmail("");
+
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 3000);
+      } else {
+        setError(result.message || "Failed to submit. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setError("Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -374,17 +392,6 @@ export default function SupportMSCPage() {
                     Submit
                   </Button>
                 </Group>
-
-                {/* {submitted && (
-                  <Notification
-                    mt="lg"
-                    radius="xl"
-                    color="green"
-                    title="Thank you!"
-                  >
-                    Your email has been submitted successfully.
-                  </Notification>
-                )} */}
                 {submitted && (
                   <Notification
                     mt="xl"

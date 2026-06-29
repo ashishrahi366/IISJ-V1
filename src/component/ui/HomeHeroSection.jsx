@@ -88,11 +88,11 @@ export default function HomeHeroSection() {
                     tt="uppercase"
                     style={{ letterSpacing: 1 }}
                   >
-                    Indian Institute for Social Justice
+                    International institute for social justice
                   </Text>
 
                   <Text c="gray.4" size="sm">
-                    Equality • Dignity • Leadership
+                    Education • Leadership • Entrepreneurship • Mental Health
                   </Text>
                 </Box>
               </Group>
@@ -126,8 +126,9 @@ export default function HomeHeroSection() {
                   lineHeight: 1.9,
                 }}
               >
-                IISJ, Based in the United States, This institue focuses on global dialogue,
-                academic bridge-building, policy research and training around systemic inequality and social justice
+                IISJ, Based in the United States, This institue focuses on
+                global dialogue, academic bridge-building, policy research and
+                training around systemic inequality and social justice
                 {/* IISJ works alongside marginalized communities to create access
                 to education, leadership opportunities, community development,
                 and sustainable social transformation across India. */}
