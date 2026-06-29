@@ -12,7 +12,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FaArrowRight, FaEnvelope, FaCheck } from "react-icons/fa";
 import { useRef, useState } from "react";
 import bgImage from "../../assets/home/DRBRBack.jpg";
-import { sendEmail } from "../../helper/mailer";
+import { sendGetInTouchEmail } from "../../helper/mailer";
 
 function DonateSection() {
   const ref = useRef(null);
@@ -38,40 +38,39 @@ function DonateSection() {
   };
 
   const handleSubmit = async () => {
-    const validationError = validateEmail(email);
+    const trimmedEmail = email.trim();
 
-    if (validationError) {
-      setError(validationError);
+    if (!trimmedEmail) {
+      setError("Email is required.");
+      return;
+    }
+
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+    if (!emailRegex.test(trimmedEmail)) {
+      setError("Please enter a valid email address.");
       return;
     }
 
     setError("");
     setLoading(true);
 
-    let subject = "Someone try to contact from Donation Section";
-    let name = email;
-    let senderEmail = email;
-    let message = "Someone try to contact from Donation Section";
     try {
-      const result = await sendEmail({
-        subject,
-        name,
-        email: senderEmail,
-        message,
-      });
-      console.log("sent");
+      const result = await sendGetInTouchEmail(trimmedEmail);
+
       if (result.success) {
         setSuccess(true);
+        setEmail("");
 
         setTimeout(() => {
           setSuccess(false);
-          setEmail("");
-        }, 2000);
+        }, 3000);
       } else {
-        setError(result.message);
+        setError(result.message || "Failed to submit. Please try again.");
       }
-    } catch {
-      setError("Failed to send request");
+    } catch (error) {
+      console.error(error);
+      setError("Something went wrong. Please try again later.");
     } finally {
       setLoading(false);
     }

@@ -59,39 +59,79 @@ export const sendEmail = async (formData) => {
 
 export const sendMSCSupportEmail = async (email) => {
     try {
-      // Send email to IISJ Admin
-      await emailjs.send(
-        SERVICE_ID,
-        ADMIN_TEMPLATE_ID,
-        {
-          from_name: "MSC Support Inquiry",
-          from_email: email,
-          subject: "New MSC Support Inquiry",
-          message:
-            "A visitor has expressed interest in supporting MSC. Please contact them regarding donation/support opportunities.",
-        },
-        PUBLIC_KEY
-      );
-  console.log("Admin Email Sent for MSC Support Inquiry");
-      // Auto reply
-      await emailjs.send(
-        SERVICE_ID,
-        AUTO_REPLY_TEMPLATE_ID,
-        {
-          to_name: "Supporter",
-          to_email: email,
-        },
-        PUBLIC_KEY
-      );
-  
-      console.log("auto reply send")
-      return { success: true };
+        // Send email to IISJ Admin
+        await emailjs.send(
+            SERVICE_ID,
+            ADMIN_TEMPLATE_ID,
+            {
+                from_name: "MSC Support Inquiry",
+                from_email: email,
+                subject: "New MSC Support Inquiry",
+                message:
+                    "A visitor has expressed interest in supporting MSC. Please contact them regarding donation/support opportunities.",
+            },
+            PUBLIC_KEY
+        );
+        console.log("Admin Email Sent for MSC Support Inquiry");
+        // Auto reply
+        await emailjs.send(
+            SERVICE_ID,
+            AUTO_REPLY_TEMPLATE_ID,
+            {
+                to_name: "Supporter",
+                to_email: email,
+            },
+            PUBLIC_KEY
+        );
+
+        console.log("auto reply send")
+        return { success: true };
     } catch (error) {
-      console.error("EmailJS Error:", error);
-  
-      return {
-        success: false,
-        message: error?.text || "Failed to send email",
-      };
+        console.error("EmailJS Error:", error);
+
+        return {
+            success: false,
+            message: error?.text || "Failed to send email",
+        };
     }
-  };
+};
+
+export const sendGetInTouchEmail = async (email) => {
+    try {
+        // Send email to IISJ Admin
+        await emailjs.send(
+            SERVICE_ID,
+            ADMIN_TEMPLATE_ID,
+            {
+                from_name: "Donation Inquiry",
+                from_email: email,
+                subject: "New Donation Inquiry",
+                message:
+                    "A visitor has requested to be contacted. Please reach out to them using the above email address.",
+            },
+            PUBLIC_KEY
+        );
+
+        // Auto reply to visitor
+        await emailjs.send(
+            SERVICE_ID,
+            AUTO_REPLY_TEMPLATE_ID,
+            {
+                to_name: "Visitor",
+                to_email: email,
+            },
+            PUBLIC_KEY
+        );
+
+        return {
+            success: true,
+        };
+    } catch (error) {
+        console.error("EmailJS Error:", error);
+
+        return {
+            success: false,
+            message: error?.text || "Failed to send email",
+        };
+    }
+};
