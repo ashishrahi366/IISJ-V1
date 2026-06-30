@@ -13,42 +13,121 @@ import {
 } from "react-icons/fa";
 
 import member1 from "../assets/pages/founder22.webp";
-import member2 from "../assets/home/leader2.webp";
-import member3 from "../assets/home/homeHero1.webp";
+import member2 from "../assets/home/KajoriLeader.webp";
+import member3 from "../assets/home/EricLeader.webp";
 import member4 from "../assets/home/homeHero1.webp";
 
 export const teamMembers = [
   {
+    id: 1,
     image: member1,
     name: "Vimal Kumar",
-    role: "Founder & Social Justice Leader",
-    desc: "Leading grassroots movements for equality, dignity, and the eradication of caste-based discrimination across India.",
-    instagram: "#",
-    linkedin: "#",
+    role: "Founder Director, MSC,",
+    designation: [
+      "Founder Director, MSC",
+      "Founder Director, Avarna Education and Training Foundation",
+      "Founder Director, International Institute for Social Justice (IISJ)",
+      "Founder Director, The Second Wind International Pvt. Ltd.",
+    ],
+    desc: `Dr. Vimal Kumar is a globally recognized social justice leader, institution builder, and lifelong advocate for dignity, equality, and human rights. Born into a family of sanitation workers, his journey from a caste-oppressed settlement to international leadership is a testament to the power of courage, education, and unwavering purpose.`,
+    longDescription: `
+    Dr. Vimal Kumar is a globally recognized social justice leader, institution builder, and lifelong advocate for dignity, equality, and human rights. Born into a family of sanitation workers, his journey from a caste-oppressed settlement to international leadership is a testament to the power of courage, education, and unwavering purpose.
+For nearly two decades, Dr. Kumar has dedicated his life to ensuring that no child, woman, or family from the scavenger and marginalized communities is forced to live a life of humiliation simply because of their birth. His mission is rooted in one unwavering belief: every human being deserves to live with dignity, opportunity, and hope.
+In 2009, he founded the Movement for Scavenger Community (MSC) to eradicate manual scavenging and build pathways to education, leadership, and economic independence for historically excluded communities. Under his leadership, MSC has established Dr. B.R. Ambedkar Community Resource Centres, nurtured thousands of young leaders, responded to humanitarian crises through initiatives like the Jai Bhim Community Kitchen, and become one of India's leading grassroots movements for caste equity and community empowerment.
+Beyond grassroots activism, Dr. Kumar has built institutions that strengthen long-term social change. He is the Founder of the International Institute for Social Justice, Founder of The Second Wind International Pvt. Ltd., Founder of the Avarna Education & Training Foundation, and Co-Founder of the Democratizing Leadership Initiative. Through these organizations, he works to bridge the gap between communities, governments, academia, and global institutions, ensuring that social justice is translated into sustainable livelihoods, inclusive leadership, and systemic change.
+His leadership has been recognized worldwide through prestigious fellowships and academic appointments, including Acumen Fellow, DAAD Research Fellow (Germany), Next Generation Leader at the McCain Institute (USA), Cure Violence Global Fellow, ASU World Innovator, and Visiting Professor at Nazarbayev University. As a Leadership Advisor with Adaptive Change Advisors (USA), he mentors changemakers across the world while championing the democratization of leadership.
+Dr. Kumar has spoken at leading international institutions, including Yale University, Arizona State University, the University of Turin, Molde University College, and other global platforms, where he challenges audiences to reimagine leadership through justice, dignity, and inclusion. His remarkable journey was captured in the internationally acclaimed documentary Son of a Sweeper, bringing the lived realities of caste discrimination and the power of community leadership to audiences around the world.
+Despite global recognition, Dr. Kumar remains deeply connected to the communities that shaped him. Every institution he builds, every young leader he mentors, and every movement he leads is driven by a single purpose: to ensure that future generations never experience the discrimination, exclusion, and indignity that his people have endured for centuries.
+His philosophy is simple yet profound:
+"My life is dedicated to ensuring that my people never suffer the way previous generations did. I may not change the whole world, but I will never stop working until every person from my community can live with dignity, equality, and the freedom to dream. Real change begins when those who were once denied a voice become the leaders of their own future."`,
+    linkedin: "https://www.linkedin.com/in/dr-vimal-kumar/  ",
   },
   {
+    id: 2,
     image: member2,
     name: "Kajori",
-    role: "Community Program Coordinator",
-    desc: "Working closely with local communities to strengthen education, leadership, and women empowerment initiatives.",
-    instagram: "#",
-    linkedin: "#",
+    role: "Director, MSC",
+    designation: [
+      "Director, MSC",
+      "Founder Director, Avarna Education and Training Foundation",
+      "Founder Director, The Second Wind International Pvt. Ltd.",
+      "Director – Communication and Program Strategy, MSC",
+      "Secretary, International Institute for Social Justice (IISJ) ",
+    ],
+    desc: `Kajori is a social impact leader, entrepreneur, and lifelong advocate for women, children, and marginalized communities. 
+    Since beginning her development journey in 2012, she has dedicated her career to creating sustainable livelihood opportunities, 
+    advancing education, promoting gender justice, and challenging the systemic inequalities that prevent people from living with dignity.`,
+    longDescription: `
+    Kajori is a social impact leader, entrepreneur, and lifelong advocate for women, children, and marginalized communities. Since beginning her development journey in 2012, she has dedicated her career to creating sustainable livelihood opportunities, advancing education, promoting gender justice, and challenging the systemic inequalities that prevent people from living with dignity.
+Born in Nepal, Kajori's journey began on the football field. As a member of the Nepal National Under-16 Women's Football Team, she learned discipline, resilience, teamwork, and the courage to rise after every setback—qualities that continue to define her leadership today. The determination that once drove her in sport now fuels her mission to build stronger, more inclusive communities where every woman and child has the opportunity to thrive.
+A development practitioner with over years of experience, Kajori has worked extensively across livelihood missions, women and child development initiatives, education, and social justice programs. She has successfully anchored fundraising initiatives, designed community-centered interventions, and provided psycho-social support and counseling to women survivors of violence and discrimination. Her work is deeply rooted in the belief that empowerment begins with restoring confidence, creating opportunities, and enabling individuals to shape their own futures.
+Deeply inspired by the ideals of Dr. B.R. Ambedkar, Kajori has spent more than a decade working at the intersection of social justice, government partnerships, and grassroots development. Her expertise spans program design, implementation strategy, partnership development, communications, and community engagement, with a consistent focus on advancing women's economic empowerment, children's rights, education, and dignity for communities affected by caste-based discrimination and social exclusion.
+Kajori is the Founder of The Second Wind International Pvt. Ltd., Founder of Avarna Education and Training Foundation, and Founder Secretary of the International Institute for Social Justice. Through these institutions, she is building community-led enterprises and innovative development models that transform social intent into sustainable livelihoods while strengthening leadership, equity, and inclusive growth.
+At Avarna and in Movement for Scavenger Community, Kajori leads program design, implementation strategy, fundraising, external communications, and strategic partnerships. She also serves as the key liaison for institutional collaborations and on-ground program coordination. Her nuanced understanding of social equity, combined with a design-thinking approach, enables her to develop solutions that are both community-responsive and scalable, ensuring lasting impact where it matters most.
+Kajori lives by a simple belief: our time on this earth is limited, but the good we do should never stop. Every initiative she leads is driven by the hope that long after individuals are gone, their work continues to create opportunities, restore dignity, and inspire generations of women and children to dream, lead, and thrive.
+Her guiding philosophy:
+"Change doesn't knock on the door; we build the door, open it, and let others walk through it with dignity."
+    `,
+
+    linkedin: "https://www.linkedin.com/in/kajori-445515116/",
   },
   {
+    id: 3,
     image: member3,
     name: "Eric",
-    role: "Youth Fellowship Mentor",
+    role: "CFO/Treasurer, International Institute for Social Justice (IISJ)",
+    designation: [
+      "CFO/Treasurer, International Institute for Social Justice (IISJ)"
+    ],
     desc: "Supporting young leaders through fellowship programs, leadership training, and community engagement.",
-    instagram: "#",
-    linkedin: "#",
+    longDescription: `
+                  As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of 
+                  meaningful change into the hands of anyone with the courage to use them.
+                  For twenty years, Eric has been a trusted leadership advisor, facilitator and trainer to senior executives navigating 
+                  their defining leadership moments. Over that time his work has reached places such as Patagonia, Google, Microsoft, 
+                  the Rockefeller Foundation, United Nations, the Canadian Institute for Advanced Research, and the White House Executive 
+                  Office of Presidential Personnel.Eric developed his practice with a deep commitment to bringing the Adaptive Leadership 
+                  framework — developed at Harvard Kennedy School — into widespread global application, in 146 countries and touching
+                   900,000 people. He serves as graduate faculty at the Milano School of Policy and Management and has lectured at 
+                   Harvard Medical School, Cornell University, New York University and the National Academy for Science, Engineering 
+                   and Medicine.His books, Your Leadership Moment and the Adaptive Leadership Facilitator Guide, are practitioner 
+                   standards used by leaders and facilitators worldwide. He has been published in Fast Company , Stanford Social 
+                   Innovation Review and Environmental Leader. Eric is a master facilitator who works at the intersection of technical 
+                   rigor and irreducible humanity. A Detroit native, Eric carries that city's particular relationship with grit, 
+                   reinvention and the refusal to mistake hardship for destiny.
+    `,
+    linkedin: "https://www.linkedin.com/in/ericrogermartin/",
   },
   {
+    id: 4,
     image: member4,
     name: "Ashish Kumar",
-    role: "Education & Outreach Lead",
-    desc: "Managing educational initiatives, partnerships, and awareness programs for marginalized communities.",
-    instagram: "#",
-    linkedin: "#",
+    role: "Technical Admin",
+    designation: [
+      "Chief Financial Officer",
+      "Treasurer - IISJ",
+      "Leadership Mentor",
+      "Social Justice Advocate",
+    ],
+    desc: `As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of 
+    meaningful change into the hands of anyone with the courage to use them.`,
+    longDescription: `
+    As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of 
+    meaningful change into the hands of anyone with the courage to use them.
+    For twenty years, Eric has been a trusted leadership advisor, facilitator and trainer to senior executives navigating 
+    their defining leadership moments. Over that time his work has reached places such as Patagonia, Google, Microsoft, 
+    the Rockefeller Foundation, United Nations, the Canadian Institute for Advanced Research, and the White House Executive 
+    Office of Presidential Personnel.Eric developed his practice with a deep commitment to bringing the Adaptive Leadership 
+    framework — developed at Harvard Kennedy School — into widespread global application, in 146 countries and touching
+     900,000 people. He serves as graduate faculty at the Milano School of Policy and Management and has lectured at 
+     Harvard Medical School, Cornell University, New York University and the National Academy for Science, Engineering 
+     and Medicine.His books, Your Leadership Moment and the Adaptive Leadership Facilitator Guide, are practitioner 
+     standards used by leaders and facilitators worldwide. He has been published in Fast Company , Stanford Social 
+     Innovation Review and Environmental Leader. Eric is a master facilitator who works at the intersection of technical 
+     rigor and irreducible humanity. A Detroit native, Eric carries that city's particular relationship with grit, 
+     reinvention and the refusal to mistake hardship for destiny.
+`,
+    linkedin: "https://www.linkedin.com/in/ashish-rahi-46048321a/",
   },
 ];
 
@@ -161,7 +240,7 @@ export const homeQuickAccessCard = [
   },
 ];
 
-import slide1 from "../assets/home/heroHome2.webp"
+import slide1 from "../assets/home/heroHome2.webp";
 import slide2 from "../assets/home/heroHome2.webp";
 import slide3 from "../assets/home/heroHome3.webp";
 import slide4 from "../assets/home/heroHome4.webp";
@@ -280,30 +359,33 @@ export const homeServicesSectionData = [
 ];
 
 import leader1 from "../assets/home/Vimalpic2.jpg";
-import leader2 from "../assets/home/leader2.webp";
-import leader3 from "../assets/home/leader3.webp";
+import leader2 from "../assets/home/KajoriLeader.webp";
+import leader3 from "../assets/home/EricLeader.webp";
 export const leaderSectionLeadersData = [
   {
     name: "Dr. Vimal Kumar",
-    designation: "Founder & CEO",
+    designation: "Founder Director, MSC",
     image: leader1,
-    description:
-      "A passionate social justice leader working to eradicate caste-based discrimination and empower marginalized communities through education, dignity, and leadership.",
+    description: `Dr. Vimal Kumar is a globally recognized social justice leader, institution builder, and lifelong advocate for dignity, equality, 
+    and human rights. Born into a family of sanitation workers, his journey from a caste-oppressed settlement to international 
+    leadership is a testament to the power of courage, education, and unwavering purpose.`,
   },
 
   {
     name: "Kajori",
-    designation: "Director – Community Programs",
+    designation: "Director, MSC",
     image: leader2,
-    description:
-      "Leads grassroots initiatives focused on women empowerment, education access, leadership training, and sustainable community transformation.",
+    description: `Kajori is a social impact leader, entrepreneur, and lifelong advocate for women, children, and marginalized communities. 
+    she has dedicated her career to creating sustainable livelihood opportunities, 
+    advancing education, promoting gender justice, and challenging the systemic inequalities that prevent people from living with dignity.`,
   },
 
   {
     name: "Eric",
-    designation: "Head of Youth Leadership",
+    designation:
+      "CFO/Treasurer, International Institute for Social Justice (IISJ)",
     image: leader3,
-    description:
-      "Works closely with young changemakers to build inclusive leadership networks, fellowship programs, and community-driven innovation projects.",
+    description: `As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of meaningful 
+      change into the hands of anyone with the courage to use them.Eric has been a trusted leadership advisor, facilitator and trainer to senior executives navigating their defining leadership moments. `,
   },
 ];

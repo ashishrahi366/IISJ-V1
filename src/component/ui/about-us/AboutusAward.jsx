@@ -3,7 +3,6 @@ import { Container, Grid, Card, Image, Title, Text, Group } from "@mantine/core"
 import { motion } from "framer-motion";
 import { FaTrophy } from "react-icons/fa";
 
-// 👉 Import your local image
 import awardImg from "../../../assets/home/award.webp";
 
 export default function AboutusAward() {

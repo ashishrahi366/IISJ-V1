@@ -40,7 +40,7 @@ import {
 import { Link } from "react-router-dom";
 
 import heroImg from "../assets/home/heroHome2.webp";
-import sectionImg from "../assets/home/leader2.webp";
+import sectionImg from "../assets/home/AvrnaLogo.jpeg";
 
 const actionAreas = [
   {
@@ -147,11 +147,7 @@ function AvarnaPage() {
           }}
         />
 
-        <Overlay
-          color="#000"
-          opacity={0.68}
-          zIndex={1}
-        />
+        <Overlay color="#000" opacity={0.68} zIndex={1} />
 
         {/* GRADIENT GLOW */}
 
@@ -233,11 +229,7 @@ function AvarnaPage() {
                 community-driven systems for lasting social transformation.
               </Text>
 
-              <Group
-                mt={40}
-                gap="md"
-                wrap="wrap"
-              >
+              <Group mt={40} gap="md" wrap="wrap">
                 <Button
                   size="xl"
                   radius="xl"
@@ -272,14 +264,8 @@ function AvarnaPage() {
 
       {/* WHAT IS AVARNA */}
 
-      <Container
-        size="xl"
-        py={120}
-      >
-        <Grid
-          gutter={60}
-          align="center"
-        >
+      <Container size="xl" py={120}>
+        <Grid gutter={60} align="center">
           <Grid.Col span={{ base: 12, md: 6 }}>
             <motion.div
               initial={{ opacity: 0, x: -60 }}
@@ -287,10 +273,7 @@ function AvarnaPage() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <Image
-                src={sectionImg}
-                radius="36px"
-              />
+              <Image src={sectionImg} radius="36px" />
             </motion.div>
           </Grid.Col>
 
@@ -343,6 +326,21 @@ function AvarnaPage() {
                   fontSize: "17px",
                 }}
               >
+                Avarna Education and Training Foundation was established to work
+                with marginalized communities beyond sanitation workers. While
+                MSC's work has traditionally focused on sanitation workers,
+                Avarna expands the scope to include Dalit, Tribal, and other
+                marginalized communities, promoting social inclusion,
+                leadership, and equitable opportunities.
+              </Text>
+              <Text
+                c="dimmed"
+                mt="md"
+                style={{
+                  lineHeight: 1.9,
+                  fontSize: "17px",
+                }}
+              >
                 Avarna stands for a future where identity is not shaped by
                 oppression, discrimination, or hierarchy — but by shared
                 humanity, leadership, and collective progress.
@@ -352,22 +350,18 @@ function AvarnaPage() {
                 mt={30}
                 spacing="md"
                 icon={
-                  <ThemeIcon
-                    color="orange"
-                    radius="xl"
-                    size={24}
-                  >
+                  <ThemeIcon color="orange" radius="xl" size={24}>
                     <FaCheckCircle size={12} />
                   </ThemeIcon>
                 }
               >
-                <List.Item>Dignity beyond caste and exclusion</List.Item>
+                <List.Item>Education - Access to quality education and learning opportunities.</List.Item>
 
-                <List.Item>Education and leadership for all</List.Item>
+                <List.Item>Leadership - Developing leaders from marginalized communities.</List.Item>
 
-                <List.Item>Grassroots empowerment and justice</List.Item>
+                <List.Item>Entrepreneurship - Creating pathways for economic empowerment and innovation.</List.Item>
 
-                <List.Item>Community-led sustainable transformation</List.Item>
+                <List.Item>Mental Health - Promoting well-being, resilience, and psychosocial support.</List.Item>
               </List>
             </motion.div>
           </Grid.Col>
@@ -376,16 +370,10 @@ function AvarnaPage() {
 
       {/* STATS */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
+      <Container size="xl" pb={120}>
         <Grid gutter="xl">
           {stats.map((item, index) => (
-            <Grid.Col
-              key={index}
-              span={{ base: 6, md: 3 }}
-            >
+            <Grid.Col key={index} span={{ base: 6, md: 3 }}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -413,10 +401,7 @@ function AvarnaPage() {
                     {item.number}
                   </Title>
 
-                  <Text
-                    c="dimmed"
-                    mt="sm"
-                  >
+                  <Text c="dimmed" mt="sm">
                     {item.label}
                   </Text>
                 </Card>
@@ -428,16 +413,12 @@ function AvarnaPage() {
 
       {/* WHY AVARNA */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
+      <Container size="xl" pb={120}>
         <Card
           radius="40px"
           p="clamp(30px,5vw,70px)"
           style={{
-            background:
-              "linear-gradient(135deg, #0f172a 0%, #111827 100%)",
+            background: "linear-gradient(135deg, #0f172a 0%, #111827 100%)",
 
             color: "white",
 
@@ -516,10 +497,10 @@ function AvarnaPage() {
             <Grid.Col span={{ base: 12, md: 5 }}>
               <Stack gap="lg">
                 {[
-                  "Grassroots leadership development",
-                  "Community-owned transformation",
-                  "Education and economic empowerment",
-                  "Social justice and policy advocacy",
+                  "Education",
+                  "Leadership",
+                  "Entrepreneurship",
+                  "Mental Health",
                 ].map((item, index) => (
                   <Paper
                     key={index}
@@ -531,18 +512,11 @@ function AvarnaPage() {
                     }}
                   >
                     <Group>
-                      <ThemeIcon
-                        size={50}
-                        radius="xl"
-                        color="orange"
-                      >
+                      <ThemeIcon size={50} radius="xl" color="orange">
                         <FaCheckCircle size={18} />
                       </ThemeIcon>
 
-                      <Text
-                        c="white"
-                        fw={600}
-                      >
+                      <Text c="white" fw={600}>
                         {item}
                       </Text>
                     </Group>
@@ -556,21 +530,9 @@ function AvarnaPage() {
 
       {/* ACTION AREAS */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
-        <Box
-          ta="center"
-          mb={70}
-        >
-          <Badge
-            size="lg"
-            radius="xl"
-            color="orange"
-            variant="light"
-            mb="lg"
-          >
+      <Container size="xl" pb={120}>
+        <Box ta="center" mb={70}>
+          <Badge size="lg" radius="xl" color="orange" variant="light" mb="lg">
             10 Key Action Areas
           </Badge>
 
@@ -601,10 +563,7 @@ function AvarnaPage() {
 
         <Grid gutter="xl">
           {actionAreas.map((item, index) => (
-            <Grid.Col
-              key={index}
-              span={{ base: 12, sm: 6, lg: 4 }}
-            >
+            <Grid.Col key={index} span={{ base: 12, sm: 6, lg: 4 }}>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -625,14 +584,12 @@ function AvarnaPage() {
                     cursor: "pointer",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform =
-                      "translateY(-10px)";
+                    e.currentTarget.style.transform = "translateY(-10px)";
                     e.currentTarget.style.boxShadow =
                       "0 25px 60px rgba(0,0,0,0.1)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.transform =
-                      "translateY(0px)";
+                    e.currentTarget.style.transform = "translateY(0px)";
                     e.currentTarget.style.boxShadow = "none";
                   }}
                 >
@@ -648,10 +605,7 @@ function AvarnaPage() {
                     {item.icon}
                   </ThemeIcon>
 
-                  <Title
-                    order={3}
-                    mb="md"
-                  >
+                  <Title order={3} mb="md">
                     {item.title}
                   </Title>
 
@@ -672,10 +626,7 @@ function AvarnaPage() {
 
       {/* VISION & MISSION */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
+      <Container size="xl" pb={120}>
         <Grid gutter="xl">
           <Grid.Col span={{ base: 12, md: 6 }}>
             <Card
@@ -686,20 +637,11 @@ function AvarnaPage() {
                 height: "100%",
               }}
             >
-              <ThemeIcon
-                size={70}
-                radius="24px"
-                color="blue"
-                mb="xl"
-              >
+              <ThemeIcon size={70} radius="24px" color="blue" mb="xl">
                 <FaGlobe size={28} />
               </ThemeIcon>
 
-              <Badge
-                color="blue"
-                variant="light"
-                mb="lg"
-              >
+              <Badge color="blue" variant="light" mb="lg">
                 Our Vision
               </Badge>
 
@@ -732,20 +674,11 @@ function AvarnaPage() {
                 height: "100%",
               }}
             >
-              <ThemeIcon
-                size={70}
-                radius="24px"
-                color="orange"
-                mb="xl"
-              >
+              <ThemeIcon size={70} radius="24px" color="orange" mb="xl">
                 <FaBalanceScale size={28} />
               </ThemeIcon>
 
-              <Badge
-                color="orange"
-                variant="light"
-                mb="lg"
-              >
+              <Badge color="orange" variant="light" mb="lg">
                 Our Mission
               </Badge>
 
@@ -774,21 +707,9 @@ function AvarnaPage() {
 
       {/* LEGAL */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
-        <Box
-          ta="center"
-          mb={50}
-        >
-          <Badge
-            color="green"
-            variant="light"
-            size="lg"
-            radius="xl"
-            mb="lg"
-          >
+      <Container size="xl" pb={120}>
+        <Box ta="center" mb={50}>
+          <Badge color="green" variant="light" size="lg" radius="xl" mb="lg">
             Legal & Compliance
           </Badge>
 
@@ -804,58 +725,46 @@ function AvarnaPage() {
         </Box>
 
         <Grid gutter="xl">
-          {[
-            "12A Registered",
-            "80G Certified",
-            "CSR-1 Eligible",
-          ].map((item, index) => (
-            <Grid.Col
-              key={index}
-              span={{ base: 12, md: 4 }}
-            >
-              <Card
-                radius="28px"
-                p="xl"
-                style={{
-                  background: "white",
-                  textAlign: "center",
-                  border: "1px solid #eee",
-                }}
-              >
-                <ThemeIcon
-                  size={70}
-                  radius="100%"
-                  color="green"
-                  mx="auto"
-                  mb="lg"
+          {["12A Registered", "80G Certified", "CSR-1 Eligible"].map(
+            (item, index) => (
+              <Grid.Col key={index} span={{ base: 12, md: 4 }}>
+                <Card
+                  radius="28px"
+                  p="xl"
+                  style={{
+                    background: "white",
+                    textAlign: "center",
+                    border: "1px solid #eee",
+                  }}
                 >
-                  <FaShieldAlt size={28} />
-                </ThemeIcon>
+                  <ThemeIcon
+                    size={70}
+                    radius="100%"
+                    color="green"
+                    mx="auto"
+                    mb="lg"
+                  >
+                    <FaShieldAlt size={28} />
+                  </ThemeIcon>
 
-                <Text
-                  fw={700}
-                  size="lg"
-                >
-                  {item}
-                </Text>
-              </Card>
-            </Grid.Col>
-          ))}
+                  <Text fw={700} size="lg">
+                    {item}
+                  </Text>
+                </Card>
+              </Grid.Col>
+            )
+          )}
         </Grid>
       </Container>
 
       {/* FOUNDER MESSAGE */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
+      <Container size="xl" pb={120}>
         <Card
           radius="40px"
           p="clamp(30px,5vw,70px)"
           style={{
-            background:
-              "linear-gradient(135deg, #111827 0%, #1f2937 100%)",
+            background: "linear-gradient(135deg, #111827 0%, #1f2937 100%)",
 
             color: "white",
 
@@ -916,10 +825,7 @@ function AvarnaPage() {
                 dignity, leadership, and opportunity.”
               </Text>
 
-              <Divider
-                my="xl"
-                color="rgba(255,255,255,0.1)"
-              />
+              <Divider my="xl" color="rgba(255,255,255,0.1)" />
 
               <Group>
                 <ThemeIcon
@@ -934,11 +840,7 @@ function AvarnaPage() {
                 </ThemeIcon>
 
                 <div>
-                  <Text
-                    fw={700}
-                    c="white"
-                    size="lg"
-                  >
+                  <Text fw={700} c="white" size="lg">
                     Dr. Vimal Kumar
                   </Text>
 
@@ -954,16 +856,12 @@ function AvarnaPage() {
 
       {/* CTA */}
 
-      <Container
-        size="xl"
-        pb={120}
-      >
+      <Container size="xl" pb={120}>
         <Card
           radius="40px"
           p="clamp(30px,5vw,70px)"
           style={{
-            background:
-              "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
+            background: "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
 
             textAlign: "center",
 
@@ -1012,12 +910,7 @@ function AvarnaPage() {
             building a future beyond exclusion and discrimination.
           </Text>
 
-          <Group
-            justify="center"
-            mt={40}
-            gap="md"
-            wrap="wrap"
-          >
+          <Group justify="center" mt={40} gap="md" wrap="wrap">
             <Button
               size="xl"
               radius="xl"

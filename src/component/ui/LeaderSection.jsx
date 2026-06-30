@@ -18,8 +18,6 @@ import {
 import { motion } from "framer-motion";
 
 import { FaQuoteRight, FaLinkedin, FaArrowRight } from "react-icons/fa";
-
-// import leaderImg from "../../assets/home/Vimalpic2.jpg";
 import { leaderSectionLeadersData } from "../../constants/comon";
 import leaderImg from "../../assets/home/LeaderImg.jpg";
 
@@ -262,12 +260,6 @@ function LeaderSection() {
                   }}
                 >
                   <Image src={leader.image} height={400} fit="cover" />
-
-                  <Overlay
-                    gradient="linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.75) 100%)"
-                    opacity={1}
-                  />
-
                   {/* OVERLAY CONTENT */}
                   <Box
                     style={{

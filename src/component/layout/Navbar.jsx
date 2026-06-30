@@ -346,9 +346,9 @@ function Navbar() {
                             location.pathname.includes(
                               "/Fellowship-Equality"
                             ) ||
-                            location.pathname.includes(
-                              "/Fellowship-Program-app"
-                            ) ||
+                            // location.pathname.includes(
+                            //   "/Fellowship-Program-app"
+                            // ) ||
                             location.pathname.includes("/support-msc") ||
                             location.pathname.includes("/avarna") ||
                             location.pathname.includes("/MSC-Detail")
@@ -372,9 +372,9 @@ function Navbar() {
                             "/Community-Resource-Centers"
                           ) ||
                           location.pathname.includes("/Fellowship-Equality") ||
-                          location.pathname.includes(
-                            "/Fellowship-Program-app"
-                          ) ||
+                          // location.pathname.includes(
+                          //   "/Fellowship-Program-app"
+                          // ) ||
                           location.pathname.includes("/support-msc") ||
                           location.pathname.includes("/avarna") ||
                           location.pathname.includes("/MSC-Detail")
@@ -417,13 +417,13 @@ function Navbar() {
                     Fellows For Equality
                   </Menu.Item>
 
-                  <Menu.Item
+                  {/* <Menu.Item
                     component={Link}
                     to="/Fellowship-Program-app"
                     className="navbar-dropdown-item"
                   >
                     Fellowship Application
-                  </Menu.Item>
+                  </Menu.Item> */}
 
                   <Menu.Item
                     component={Link}
@@ -714,11 +714,11 @@ function Navbar() {
                   path: "/Fellowship-Equality",
                 },
 
-                {
-                  label: "Fellowship Application",
+                // {
+                //   label: "Fellowship Application",
 
-                  path: "/Fellowship-Program-app",
-                },
+                //   path: "/Fellowship-Program-app",
+                // },
 
                 {
                   label: "Support MSC",

@@ -14,8 +14,12 @@ import {
   Text,
   ThemeIcon,
   Title,
+  ActionIcon,
 } from "@mantine/core";
-import { FaArrowRight, FaUsers } from "react-icons/fa";
+import { FaArrowRight, FaUsers, FaLinkedin } from "react-icons/fa";
+import { useDisclosure } from "@mantine/hooks";
+import LeaderProfileModal from "../component/ui/LeaderProfileModal";
+import { useState } from "react";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -24,6 +28,14 @@ import { teamMembers } from "../constants/comon";
 import heroImg from "../assets/home/infoImg3.jpeg";
 
 function TeamPage() {
+  const [opened, { open, close }] = useDisclosure(false);
+
+  const [selectedLeaderId, setSelectedLeaderId] = useState(null);
+
+  const openProfile = (id) => {
+    setSelectedLeaderId(id);
+    open();
+  };
   return (
     <Box
       style={{
@@ -326,7 +338,6 @@ function TeamPage() {
                         >
                           {member.desc}
                         </Text>
-
                         {/* BUTTONS */}
 
                         <Group mt="md">
@@ -334,24 +345,41 @@ function TeamPage() {
                             radius="xl"
                             size="md"
                             rightSection={<FaArrowRight size={14} />}
+                            onClick={() => openProfile(member.id)}
                             style={{
                               background:
-                                "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
-
-                              boxShadow: "0 10px 30px rgba(255,123,0,0.25)",
+                                "linear-gradient(135deg,#ff7b00,#ff9d3d)",
                             }}
                           >
                             View Profile
                           </Button>
 
-                          <Button
-                            variant="light"
-                            color="orange"
-                            radius="xl"
-                            size="md"
-                          >
-                            Connect
-                          </Button>
+                          {member.linkedin && member.linkedin !== "#" && (
+                            <ActionIcon
+                              component="a"
+                              href={member.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              size={48}
+                              radius="xl"
+                              color="blue"
+                              variant="light"
+                              style={{
+                                cursor: "pointer",
+                                transition: "all 0.25s ease",
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.transform =
+                                  "translateY(-3px)";
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.transform =
+                                  "translateY(0)";
+                              }}
+                            >
+                              <FaLinkedin size={22} />
+                            </ActionIcon>
+                          )}
                         </Group>
                       </Stack>
                     </Box>
@@ -459,6 +487,11 @@ function TeamPage() {
           </Grid>
         </Card>
       </Container>
+      <LeaderProfileModal
+        opened={opened}
+        onClose={close}
+        leaderId={selectedLeaderId}
+      />
     </Box>
   );
 }
