@@ -21,7 +21,7 @@ import {
   IconBooks,
   IconDeviceDesktop,
 } from "@tabler/icons-react";
-
+import { centersData } from "../constants/comon";
 import CRC1 from "../assets/pages/CRC1.webp";
 import CRC2 from "../assets/pages/CRC2.webp";
 import wwd2 from "../assets/pages/wwd2.webp";
@@ -29,56 +29,56 @@ import wwd2 from "../assets/pages/wwd2.webp";
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);
 
-const centersData = [
-  {
-    title: "Chennai Community Resource Center",
-    location: "Chennai, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "A collaborative learning and support space focused on education, leadership, and community empowerment for local youth and families.",
-  },
-  {
-    title: "Madurai Community Resource Center",
-    location: "Madurai, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "Providing access to digital learning, mentorship programs, and social development initiatives for underserved communities.",
-  },
-  {
-    title: "Coimbatore Community Resource Center",
-    location: "Coimbatore, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
-  },
-  {
-    title: "Coimbatore Community Resource Center",
-    location: "Coimbatore, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
-  },
-  {
-    title: "Coimbatore Community Resource Center",
-    location: "Coimbatore, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
-  },
-  {
-    title: "Coimbatore Community Resource Center",
-    location: "Coimbatore, Tamil Nadu",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
-    description:
-      "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
-  },
-];
+// const centersData = [
+//   {
+//     title: "Chennai Community Resource Center",
+//     location: "Chennai, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "A collaborative learning and support space focused on education, leadership, and community empowerment for local youth and families.",
+//   },
+//   {
+//     title: "Madurai Community Resource Center",
+//     location: "Madurai, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "Providing access to digital learning, mentorship programs, and social development initiatives for underserved communities.",
+//   },
+//   {
+//     title: "Coimbatore Community Resource Center",
+//     location: "Coimbatore, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
+//   },
+//   {
+//     title: "Coimbatore Community Resource Center",
+//     location: "Coimbatore, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
+//   },
+//   {
+//     title: "Coimbatore Community Resource Center",
+//     location: "Coimbatore, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
+//   },
+//   {
+//     title: "Coimbatore Community Resource Center",
+//     location: "Coimbatore, Tamil Nadu",
+//     image:
+//       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400&auto=format&fit=crop",
+//     description:
+//       "A vibrant local hub where students, volunteers, and community members collaborate through education and skill-building activities.",
+//   },
+// ];
 
 const features = [
   {

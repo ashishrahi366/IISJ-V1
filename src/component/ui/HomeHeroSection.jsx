@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logomark_Digital.png";
-import mainHero1 from "../../assets/home/mainHero1.avif";
+import mainHero1 from "../../assets/home/homeBanner_1.webp";
 import mainHero2 from "../../assets/home/heroTest.avif";
 
 const MotionBox = motion(Box);

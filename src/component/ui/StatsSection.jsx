@@ -175,10 +175,10 @@ function StatsSection() {
 
                 <Stack gap="md" mt="sm">
                   {[
-                    "Grassroots community leadership programs",
-                    "Inclusive education & fellowship initiatives",
-                    "Safe spaces for learning and empowerment",
-                    "Long-term sustainable social transformation",
+                    "Education",
+                    "Entrepreneurship",
+                    "Leadership",
+                    "Mental Health",
                   ].map((item, index) => (
                     <Group key={index} align="center" wrap="nowrap">
                       <ThemeIcon

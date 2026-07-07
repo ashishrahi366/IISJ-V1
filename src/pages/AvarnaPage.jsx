@@ -227,6 +227,7 @@ function AvarnaPage() {
                 empowerment beyond caste, gender, religion, and social
                 exclusion. We build leadership, education, advocacy, and
                 community-driven systems for lasting social transformation.
+                
               </Text>
 
               <Group mt={40} gap="md" wrap="wrap">

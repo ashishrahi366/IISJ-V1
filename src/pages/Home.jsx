@@ -15,6 +15,7 @@ import HomeQuickAccess from '../component/ui/HomeQuickAccess';
 import MediaCoverageSection from '../component/ui/MediaCoverageSection';
 import HomeHeroSection from '../component/ui/HomeHeroSection';
 import MartinLutherKingQuote from '../component/ui/MartinLutherKingQuote';
+import AvarnaPreview from "../component/ui/about-us/AvarnaPreview";
 
 const Home = () => {
     return (
@@ -24,6 +25,7 @@ const Home = () => {
             <MSCOverview/>
             <HomeQuickAccess/>
             <HeroSection/>  
+            <AvarnaPreview/>
             <MediaCoverageSection/>
             <ServicesSection/>
             <DRBRAAni/>

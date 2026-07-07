@@ -191,9 +191,12 @@ export default function AvarnaPreview() {
                     lineHeight: 1.9,
                   }}
                 >
-                  AVARNA is a grassroots initiative focused on uplifting Dalit,
-                  tribal, and marginalized communities through leadership
-                  development, entrepreneurship, education, and policy advocacy.
+                  Avarna Education and Training Foundation was established to
+                  work with marginalized communities beyond sanitation workers.
+                  While MSC's work has traditionally focused on sanitation
+                  workers, Avarna expands the scope to include Dalit, Tribal,
+                  and other marginalized communities, promoting social
+                  inclusion, leadership, and equitable opportunities.
                 </Text>
 
                 <Text
@@ -203,9 +206,9 @@ export default function AvarnaPreview() {
                     lineHeight: 1.9,
                   }}
                 >
-                  The foundation works to create sustainable systems that
-                  encourage equality, dignity, innovation, and inclusive social
-                  change across communities.
+                  AVARNA is a grassroots initiative focused on uplifting Dalit,
+                  tribal, and marginalized communities through leadership
+                  development, entrepreneurship, education, and policy advocacy.
                 </Text>
 
                 {/* STATS */}

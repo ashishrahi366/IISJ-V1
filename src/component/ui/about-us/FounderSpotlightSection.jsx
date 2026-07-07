@@ -27,19 +27,14 @@ import leader12 from "../../../assets/home/leader12.jpg";
 const leadershipPoints = [
   {
     icon: FaUsers,
-    title: "Grassroots Leadership",
+    title: "Education",
     desc: "Building leadership from within marginalized communities through education and empowerment.",
   },
   {
     icon: FaGlobe,
-    title: "Global Advocacy",
+    title: "Leadership",
     desc: "Connecting local struggles with global conversations on dignity, equality, and human rights.",
-  },
-  {
-    icon: FaAward,
-    title: "Social Impact",
-    desc: "Creating long-term community transformation through sustainable initiatives and fellowships.",
-  },
+  }
 ];
 
 export default function FounderSpotlightSection() {

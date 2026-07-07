@@ -77,7 +77,7 @@ Her guiding philosophy:
     name: "Eric",
     role: "CFO/Treasurer, International Institute for Social Justice (IISJ)",
     designation: [
-      "CFO/Treasurer, International Institute for Social Justice (IISJ)"
+      "CFO/Treasurer, International Institute for Social Justice (IISJ)",
     ],
     desc: "Supporting young leaders through fellowship programs, leadership training, and community engagement.",
     longDescription: `
@@ -387,5 +387,65 @@ export const leaderSectionLeadersData = [
     image: leader3,
     description: `As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of meaningful 
       change into the hands of anyone with the courage to use them.Eric has been a trusted leadership advisor, facilitator and trainer to senior executives navigating their defining leadership moments. `,
+  },
+];
+
+import solan from "../assets/pages/Centers/solan.jpg";
+import abtHero1 from "../assets/pages/abtHero1.webp";
+import Bongaigaon from "../assets/pages/Centers/Bongaigaon.jpg";
+import Barmer from "../assets/pages/Centers/Barmer.jpeg";
+import Phalodi from "../assets/pages/Centers/Phalodi.jpg";
+import Dhanbad from "../assets/pages/Centers/Dhanbad.webp";
+import Barrackpore from "../assets/pages/Centers/Barrackpore.jpg";
+export const centersData = [
+  {
+    title: "Solan Community Resource Center",
+    location: "Solan, Himachal Pradesh  ",
+    image: solan,
+    description: `The Dr. B.R. Ambedkar Community Center in Solan serves as a hub for 
+    community engagement, educational support, leadership development, and awareness programs that empower 
+    marginalized communities and promote social justice.`,
+  },
+  {
+    title: "Ladwa Community Resource Center",
+    location: "Ladwa, Haryana",
+    image:abtHero1,
+    description: `Located in Ladwa, this Community Center provides a safe and inclusive space for skill development, educational initiatives, 
+    legal awareness, and community participation, fostering dignity and equal opportunities for all.`,
+  },
+  {
+    title: "Bongaigaon Community Resource Center",
+    location: "Bongaigaon, Assam",
+    image:Bongaigaon,
+    description: `The Bongaigaon Community Center strengthens local communities through educational activities, youth engagement,
+     rights awareness, and capacity-building programs that encourage sustainable social development.`,
+  },
+  {
+    title: "Barmer Community Resource Center",
+    location: "Barmer, Rajasthan",
+    image:Barmer,
+    description: `The Dr. B.R. Ambedkar Community Center in Barmer supports underserved communities by facilitating educational resources,
+     leadership opportunities, awareness campaigns, and community-driven initiatives for inclusive growth.`,
+  },
+  {
+    title: "Phalodi Community Resource Center",
+    location: "Phalodi, Rajasthan",
+    image:Phalodi,
+    description: `Serving the communities of Phalodi, the center promotes education, empowerment, and social inclusion through workshops, 
+    community meetings, and programs that encourage active civic participation.`,
+  },
+  {
+    title: "Dhanbad Community Resource Center",
+    location: "Dhanbad, Jharkhand",
+    image:Dhanbad,
+    description: `The Dhanbad Community Center acts as a platform for education, community organizing, youth leadership, and social 
+      awareness, helping individuals build confidence and access opportunities for a better future.`,
+  },
+  {
+    title: "Barrackpore Community Resource Center",
+    location: "Barrackpore, West Bengal",
+    image:Barrackpore,
+    description: `The Dr. B.R. Ambedkar Community Center in Barrackpore provides a welcoming space for learning, community collaboration, 
+    rights awareness, and leadership development, empowering local residents to create positive social change.`,
   },
 ];

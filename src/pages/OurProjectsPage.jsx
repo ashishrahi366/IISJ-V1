@@ -34,7 +34,6 @@ import fellowshipImage from "../assets/pages/partner.webp";
 import resourceImage from "../assets/pages/volunteer.webp";
 
 export default function OurProjectsPage() {
-  /*  PROJECT DATA*/
 
   const focusAreas = [
     {
