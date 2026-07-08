@@ -23,7 +23,8 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 
 import about1 from "../../assets/home/MSC-Organisation.jpg";
-import about2 from "../../assets/home/homeAbt1.jpeg";
+// import about1 from "../../assets/pages/QuickAccess.jpeg";
+import about2 from "../../assets/pages/QuickAccess.jpeg";
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);

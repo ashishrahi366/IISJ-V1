@@ -288,6 +288,9 @@ import bbcImg from "../assets/home/BBC2.jpg";
 import yourStoryImg from "../assets/home/Yourstory.png";
 import bigStoryImg from "../assets/home/BigStory.jpg";
 import AZU from "../assets/home/AZU.webp";
+import ISP from "../assets/home/ISP1.gif";
+import dailygood from "../assets/home/dailygood.webp";
+import travellersuniversity from "../assets/home/travellersuniversity.png";
 export const homeMediaData = [
   {
     title: "BBC",
@@ -326,6 +329,33 @@ export const homeMediaData = [
     icon: <FaPlay size={15} />,
     color: "#3b0614",
     textColor: "#3b0614",
+  },
+  {
+    title: "Indian Sanitation Coalition",
+    subtitle: "E-Newsletter",
+    image: ISP,
+    link: "https://www.indiasanitationcoalition.org/our-publications/e-newsletter-december-2023.html",
+    icon: <FaPlay size={15} />,
+    color: "#401906",
+    textColor: "#401906",
+  },
+  {
+    title: "Daily Good",
+    subtitle: "Son of a Sweeper",
+    image: dailygood,
+    link: "https://www.dailygood.org/kt/9001/son-of-a-sweeper/",
+    icon: <FaPlay size={15} />,
+    color: "#140700",
+    textColor: "#140700",
+  },
+  {
+    title: "Travellers University",
+    subtitle: "Emancipation through Education",
+    image: travellersuniversity,
+    link: "https://www.travellersuniversity.org/post/emancipation-through-education",
+    icon: <FaPlay size={15} />,
+    color: "#140700",
+    textColor: "#140700",
   },
 ];
 
@@ -409,42 +439,42 @@ export const centersData = [
   {
     title: "Ladwa Community Resource Center",
     location: "Ladwa, Haryana",
-    image:abtHero1,
+    image: abtHero1,
     description: `Located in Ladwa, this Community Center provides a safe and inclusive space for skill development, educational initiatives, 
     legal awareness, and community participation, fostering dignity and equal opportunities for all.`,
   },
   {
     title: "Bongaigaon Community Resource Center",
     location: "Bongaigaon, Assam",
-    image:Bongaigaon,
+    image: Bongaigaon,
     description: `The Bongaigaon Community Center strengthens local communities through educational activities, youth engagement,
      rights awareness, and capacity-building programs that encourage sustainable social development.`,
   },
   {
     title: "Barmer Community Resource Center",
     location: "Barmer, Rajasthan",
-    image:Barmer,
+    image: Barmer,
     description: `The Dr. B.R. Ambedkar Community Center in Barmer supports underserved communities by facilitating educational resources,
      leadership opportunities, awareness campaigns, and community-driven initiatives for inclusive growth.`,
   },
   {
     title: "Phalodi Community Resource Center",
     location: "Phalodi, Rajasthan",
-    image:Phalodi,
+    image: Phalodi,
     description: `Serving the communities of Phalodi, the center promotes education, empowerment, and social inclusion through workshops, 
     community meetings, and programs that encourage active civic participation.`,
   },
   {
     title: "Dhanbad Community Resource Center",
     location: "Dhanbad, Jharkhand",
-    image:Dhanbad,
+    image: Dhanbad,
     description: `The Dhanbad Community Center acts as a platform for education, community organizing, youth leadership, and social 
       awareness, helping individuals build confidence and access opportunities for a better future.`,
   },
   {
     title: "Barrackpore Community Resource Center",
     location: "Barrackpore, West Bengal",
-    image:Barrackpore,
+    image: Barrackpore,
     description: `The Dr. B.R. Ambedkar Community Center in Barrackpore provides a welcoming space for learning, community collaboration, 
     rights awareness, and leadership development, empowering local residents to create positive social change.`,
   },

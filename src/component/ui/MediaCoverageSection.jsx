@@ -59,85 +59,97 @@ function MediaCoverageSection() {
         </Stack>
 
         {/* 🔥 IMAGE FOCUSED CARDS */}
-        <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="xl">
-          {homeMediaData.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.15,
-              }}
-              viewport={{ once: true }}
-              whileHover={{
-                y: -10,
-              }}
-            >
-              <Card
-                component="a"
-                href={item.link}
-                target="_blank"
-                radius="30px"
-                p={0}
-                shadow="xl"
-                style={{
-                  overflow: "hidden",
-                  position: "relative",
-                  textDecoration: "none",
-                  height: "420px",
-                  display: "block",
-                  border: "1px solid rgba(0,0,0,0.06)",
-                }}
-              >
-                {/* IMAGE */}
-                <Image src={item.image} h="100%" fit="cover" />
-                {/* CONTENT */}
-                <Box
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    width: "100%",
-                    padding: "28px",
-                    zIndex: 2,
-                  }}
-                >
-                  {/* ICON */}
-                  <ActionIcon
-                    size={52}
-                    radius="xl"
-                    mb={18}
-                    style={{
-                      background: item.color,
-                      color: "white",
-                      boxShadow: "0 12px 25px rgba(0,0,0,0.3)",
-                    }}
-                  >
-                    {item.icon}
-                  </ActionIcon>
+        <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="lg">
+  {homeMediaData.map((item, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.15,
+      }}
+      viewport={{ once: true }}
+      whileHover={{
+        y: -8,
+        scale: 1.02,
+      }}
+    >
+      <Card
+        component="a"
+        href={item.link}
+        target="_blank"
+        radius="24px"
+        p={0}
+        shadow="lg"
+        style={{
+          overflow: "hidden",
+          position: "relative",
+          textDecoration: "none",
+          height: "320px",
+          display: "block",
+          border: "1px solid rgba(0,0,0,0.06)",
+          cursor: "pointer",
+        }}
+      >
+        <Image src={item.image} h="100%" fit="cover" />
 
-                  {/* TITLE */}
-                  <Title
-                    order={2}
-                    c={item.textColor}
-                    fw={900}
-                    style={{
-                      fontSize: "30px",
-                    }}
-                  >
-                    {item.title}
-                  </Title>
+        {/* CONTENT */}
+        <Box
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            width: "100%",
+            padding: "20px",
+            zIndex: 2,
+          }}
+        >
+          {/* ICON */}
+          <ActionIcon
+            size={42}
+            radius="xl"
+            mb={12}
+            style={{
+              background: item.color,
+              color: "white",
+              boxShadow: "0 10px 20px rgba(0,0,0,0.25)",
+            }}
+          >
+            {item.icon}
+          </ActionIcon>
 
-                  {/* SUBTITLE */}
-                  <Text c={item.textColor} mt={1} size="md">
-                    {item.subtitle}
-                  </Text>
-                </Box>
-              </Card>
-            </motion.div>
-          ))}
-        </SimpleGrid>
+          {/* TITLE */}
+          <Title
+            order={3}
+            c={item.textColor}
+            fw={800}
+            lineClamp={2}
+            style={{
+              fontSize: "22px",
+              lineHeight: 1.3,
+            }}
+          >
+            {item.title}
+          </Title>
+
+          {/* SUBTITLE */}
+          <Text
+            c={item.textColor}
+            mt={6}
+            size="sm"
+            lineClamp={2}
+            style={{
+              opacity: 0.95,
+            }}
+          >
+            {item.subtitle}
+          </Text>
+        </Box>
+      </Card>
+    </motion.div>
+  ))}
+</SimpleGrid>
       </Container>
     </Box>
   );

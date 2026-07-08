@@ -121,7 +121,7 @@ export const homeGalleryData = [
         image: homeHero1,
     },
     {
-        title: "Healthcare Awareness Campaign",
+        title: "Mental Health    Awareness Campaign",
         image: heroHome4,
     },
     {

@@ -4,8 +4,9 @@ import { FaHandsHelping } from "react-icons/fa";
 import { theme } from "../../theme";
 import { Button } from "@mantine/core";
 import { FaArrowRight } from "react-icons/fa";
-import overviewImg from "../../assets/home/MSC-Commitee.jpg";
 import { Link } from "react-router-dom";
+// import overviewImg from "../../assets/home/MSC-Commitee.jpg";
+import overviewImg from "../../assets/pages/MSC_Overview1.jpeg";
 
 function MSCOverview() {
   return (

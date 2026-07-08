@@ -96,10 +96,10 @@ export default function HomeGallery() {
                     />
 
                     {/* DARK OVERLAY */}
-                    <Overlay
+                    {/* <Overlay
                       gradient="linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 100%)"
                       opacity={1}
-                    />
+                    /> */}
 
                     {/* TITLE */}
                     <div
