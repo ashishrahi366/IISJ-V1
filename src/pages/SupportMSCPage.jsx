@@ -15,6 +15,8 @@ import {
   TextInput,
   ThemeIcon,
   Title,
+  Badge,
+  Divider,  
   Notification,
 } from "@mantine/core";
 import {
@@ -80,13 +82,10 @@ export default function SupportMSCPage() {
     setLoading(true);
 
     try {
-      console.log('fucn call')
       const result = await sendMSCSupportEmail(trimmedEmail);
-
       if (result.success) {
         setSubmitted(true);
         setEmail("");
-
         setTimeout(() => {
           setSubmitted(false);
         }, 3000);
@@ -94,7 +93,6 @@ export default function SupportMSCPage() {
         setError(result.message || "Failed to submit. Please try again.");
       }
     } catch (error) {
-      console.error(error);
       setError("Something went wrong. Please try again later.");
     } finally {
       setLoading(false);
@@ -319,120 +317,232 @@ export default function SupportMSCPage() {
       {/* DONATION SECTION */}
 
       <Container size="lg" pb={120}>
-        <Card radius={36} p={{ base: "xl", md: 50 }} shadow="xl">
-          <Grid align="center" gutter={50}>
-            <Grid.Col span={{ base: 12, md: 6 }}>
-              <Image src={mvv3} radius={28} h={500} fit="cover" />
+      <Card radius={36} p={{ base: "xl", md: 50 }} shadow="xl">
+  <Stack align="center" mb={50}>
+    <Text
+      c="orange.6"
+      fw={700}
+      tt="uppercase"
+      size="sm"
+      style={{ letterSpacing: 1 }}
+    >
+      Support Our Mission
+    </Text>
 
-              <Text ta="center" mt="md" c="dimmed" fs="italic">
-                Supporting communities through education, dignity, and
-                leadership.
-              </Text>
-            </Grid.Col>
+    <Title
+      order={2}
+      ta="center"
+      fw={900}
+      style={{
+        fontSize: "clamp(32px,5vw,54px)",
+      }}
+    >
+      Choose Your Donation Option
+    </Title>
 
-            <Grid.Col span={{ base: 12, md: 6 }}>
-              <Text c="orange.6" fw={700} mb="md">
-                Donate to MSC
-              </Text>
+    <Text ta="center" c="dimmed" maw={700}>
+      Every contribution helps us advance education, leadership,
+      dignity, and social justice initiatives across communities.
+    </Text>
+  </Stack>
 
-              <Title order={2} fw={900} size="3rem" mb="xl">
-                Your Contribution Creates Real Change
-              </Title>
+  <Grid gutter={35}>
+    {/* INDIA */}
 
-              <Stack gap="sm">
-                <Text fw={700}>ACCOUNT HOLDER:</Text>
-                <Text c="dimmed">Movement for Scavenger Community – MSC</Text>
+    <Grid.Col span={{ base: 12, md: 6 }}>
+      <Card
+        radius={30}
+        p="xl"
+        withBorder
+        h="100%"
+        style={{
+          background:
+            "linear-gradient(180deg,#fffaf5 0%,#ffffff 100%)",
+        }}
+      >
+        <Badge
+          color="orange"
+          size="lg"
+          radius="xl"
+          mb="lg"
+        >
+          🇮🇳 Indian Donors
+        </Badge>
 
-                <Text fw={700} mt="md">
-                  ACCOUNT NO:
-                </Text>
-                <Text c="dimmed">6428 0201 0000 376</Text>
+        <Title order={3} mb="md">
+          Avarna Education & Training Foundation
+        </Title>
 
-                <Text fw={700} mt="md">
-                  BANK NAME:
-                </Text>
-                <Text c="dimmed">Union Bank of India</Text>
+        <Stack gap="xs">
+          <Text fw={700}>Account Holder</Text>
+          <Text c="dimmed">
+            Avarna Education & Training Foundation
+          </Text>
 
-                <Text fw={700} mt="md">
-                  Branch:
-                </Text>
-                <Text c="dimmed">Ladwa (Kurukshetra)</Text>
+          <Text fw={700} mt="md">
+            Account Number
+          </Text>
+          <Text c="dimmed">
+            XXXXXXXXXXXXXX
+          </Text>
 
-                <Text fw={700} mt="md">
-                  IFSC:
-                </Text>
-                <Text c="dimmed">UBIN 0564 281</Text>
-              </Stack>
+          <Text fw={700} mt="md">
+            Bank
+          </Text>
+          <Text c="dimmed">
+            Union Bank of India
+          </Text>
 
-              {/* EMAIL FORM */}
+          <Text fw={700} mt="md">
+            Branch
+          </Text>
+          <Text c="dimmed">
+            Ladwa (Kurukshetra)
+          </Text>
 
-              <Box mt={40}>
-                <Text fw={700} mb="md">
-                  Or Contact Us To Support MSC
-                </Text>
+          <Text fw={700} mt="md">
+            IFSC
+          </Text>
+          <Text c="dimmed">
+            XXXXXXXX
+          </Text>
+        </Stack>
+      </Card>
+    </Grid.Col>
 
-                <Group align="flex-start">
-                  <TextInput
-                    placeholder="Enter your email"
-                    size="lg"
-                    radius="xl"
-                    leftSection={<FaEnvelope size={14} />}
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    error={error}
-                    style={{ flex: 1 }}
-                  />
+    {/* INTERNATIONAL */}
 
-                  <Button
-                    size="lg"
-                    radius="xl"
-                    color="orange"
-                    onClick={handleSubmit}
-                  >
-                    Submit
-                  </Button>
-                </Group>
-                {submitted && (
-                  <Notification
-                    mt="xl"
-                    radius="24px"
-                    withCloseButton={false}
-                    icon={<FaCheckCircle size={20} />}
-                    title={
-                      <Text fw={700} size="md">
-                        Successfully Submitted!
-                      </Text>
-                    }
-                    styles={{
-                      root: {
-                        background:
-                          "linear-gradient(135deg, rgba(34,197,94,0.12) 0%, rgba(22,163,74,0.18) 100%)",
-                        border: "1px solid rgba(34,197,94,0.25)",
-                        backdropFilter: "blur(12px)",
-                        padding: "18px 22px",
-                        boxShadow: "0 10px 30px rgba(34,197,94,0.12)",
-                      },
-                      icon: {
-                        background: "rgba(34,197,94,0.15)",
-                        color: "#22c55e",
-                      },
-                      title: {
-                        color: "#166534",
-                        marginBottom: 4,
-                      },
-                      description: {
-                        color: "#166534",
-                      },
-                    }}
-                  >
-                    Thank you for supporting MSC. Our team will contact you
-                    shortly.
-                  </Notification>
-                )}
-              </Box>
-            </Grid.Col>
-          </Grid>
-        </Card>
+    <Grid.Col span={{ base: 12, md: 6 }}>
+  <Card
+    radius={30}
+    p="xl"
+    withBorder
+    h="100%"
+    style={{
+      background:
+        "linear-gradient(180deg, #f8fbff 0%, #ffffff 100%)",
+    }}
+  >
+    <Badge
+      color="blue"
+      size="lg"
+      radius="xl"
+      mb="lg"
+    >
+      🌍 International Donors
+    </Badge>
+
+    <Title order={3} fw={800} mb="xl">
+      International Institute for Social Justice (IISJ)
+    </Title>
+
+    <Stack gap="sm">
+      <Text fw={700}>ACCOUNT HOLDER:</Text>
+      <Text c="dimmed">
+        International Institute for Social Justice (IISJ)
+      </Text>
+
+      <Text fw={700} mt="md">
+        ACCOUNT NUMBER:
+      </Text>
+      <Text c="dimmed">
+        XXXXXXXXXXXXXXXX
+      </Text>
+
+      <Text fw={700} mt="md">
+        BANK NAME:
+      </Text>
+      <Text c="dimmed">
+        Bank Name
+      </Text>
+
+      <Text fw={700} mt="md">
+        BRANCH:
+      </Text>
+      <Text c="dimmed">
+        Branch Name
+      </Text>
+
+      <Text fw={700} mt="md">
+        SWIFT / BIC CODE:
+      </Text>
+      <Text c="dimmed">
+        XXXXXXXX
+      </Text>
+
+      <Text fw={700} mt="md">
+        IBAN:
+      </Text>
+      <Text c="dimmed">
+        XXXXXXXXXXXXXXXXXXXXXXXXX
+      </Text>
+
+      <Text fw={700} mt="md">
+        BANK ADDRESS:
+      </Text>
+      <Text c="dimmed">
+        Full Bank Address
+      </Text>
+
+      <Text fw={700} mt="md">
+        CURRENCY:
+      </Text>
+      <Text c="dimmed">
+        USD / EUR (or as applicable)
+      </Text>
+    </Stack>
+  </Card>
+</Grid.Col>
+  </Grid>
+
+  {/* CONTACT FORM */}
+
+  <Box mt={55}>
+    <Divider mb={35} />
+
+    <Title order={3} mb="sm">
+      Need Assistance?
+    </Title>
+
+    <Text c="dimmed" mb="xl">
+      Share your email and our team will contact you with
+      donation guidance and support.
+    </Text>
+
+    <Group align="flex-start">
+      <TextInput
+        placeholder="Enter your email"
+        size="lg"
+        radius="xl"
+        leftSection={<FaEnvelope size={14} />}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        error={error}
+        style={{ flex: 1 }}
+      />
+
+      <Button
+        size="lg"
+        radius="xl"
+        color="orange"
+        onClick={handleSubmit}
+      >
+        Contact Us
+      </Button>
+    </Group>
+
+    {submitted && (
+      <Notification
+        mt="xl"
+        radius="24px"
+        withCloseButton={false}
+        icon={<FaCheckCircle size={20} />}
+      >
+        Thank you for your interest. Our team will contact you shortly.
+      </Notification>
+    )}
+  </Box>
+</Card>
       </Container>
 
       {/* PARTNER SECTION */}

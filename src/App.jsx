@@ -24,6 +24,7 @@ import EventsPage from "./pages/EventsPage";
 import BlogsPage from "./pages/BlogsPage";
 import BlogDetails from "./pages/BlogDetails";
 import OurProjectsPage from "./pages/OurProjectsPage";
+import SecondWindSection from "./component/ui/Home/SecondWindSection";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/blogs/:slug" element={<BlogDetails />} />
         <Route path="/Vimal-Kumar" element={<VimalKumarLeaderSection />} />
         <Route path="/Support-MSC" element={<SupportMSCPage />} />
+        <Route path="/Second-Wind" element={<SecondWindSection />} />
         <Route path="*" element={<NotFound />} />
         <Route
           path="/Fellowship-Program-app"

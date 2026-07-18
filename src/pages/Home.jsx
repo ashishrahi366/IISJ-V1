@@ -17,10 +17,26 @@ import HomeHeroSection from '../component/ui/HomeHeroSection';
 import MartinLutherKingQuote from '../component/ui/MartinLutherKingQuote';
 import AvarnaPreview from "../component/ui/about-us/AvarnaPreview";
 
+import IISJHeroIntro from "../component/ui/Home/IISJHeroIntro";
+import OrganizationFamilySection from "../component/ui/Home/OrganizationFamilySection";
+import EcosystemDiagram from "../component/ui/Home/EcosystemDiagram";
+import WhyIISJ from "../component/ui/Home/WhyIISJ";
+import EcosystemStats from "../component/ui/Home/EcosystemStats";
+import InitiativeCard from "../component/ui/Home/InitiativeCard";
+
 const Home = () => {
     return (
         <div>
             <HomeHeroSection/>
+
+            <IISJHeroIntro/>
+            <OrganizationFamilySection/>
+            <EcosystemDiagram/>
+            <WhyIISJ/>
+            <EcosystemStats/>
+            {/* <InitiativeCard/> */}
+
+
             <HeroCarousel/>
             <MSCOverview/>
             <HomeQuickAccess/>
