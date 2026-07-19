@@ -9,6 +9,8 @@ import {
   Stack,
   Menu,
   Box,
+  ScrollArea,
+  Divider
 } from "@mantine/core";
 
 import { useDisclosure, useWindowScroll } from "@mantine/hooks";
@@ -134,9 +136,7 @@ function Navbar() {
                     fit="contain"
                   />
 
-                  <Text fw={800} size="xl">
-                
-                  </Text>
+                  <Text fw={800} size="xl"></Text>
                 </Group>
               </motion.div>
             </Box>
@@ -166,7 +166,7 @@ function Navbar() {
                 }}
               >
                 <Link to="/about" style={navLinkStyle("/about")}>
-                  About
+                  Our Work
                 </Link>
 
                 {renderUnderline("/about")}
@@ -214,7 +214,7 @@ function Navbar() {
                           transition: "0.3s",
                         }}
                       >
-                        Information
+                        About us
                       </Text>
 
                       <FaChevronDown
@@ -283,7 +283,7 @@ function Navbar() {
                     className="navbar-dropdown-item"
                     leftSection={<FaCalendarAlt size={14} />}
                   >
-                    About Vimal Kumar
+                    About Founder
                   </Menu.Item>
 
                   <Menu.Item
@@ -502,86 +502,115 @@ function Navbar() {
       {/* MOBILE DRAWER */}
 
       <Drawer
-        opened={opened}
-        onClose={close}
-        withCloseButton={false}
-        padding={0}
-        size="85%"
-        position="right"
-        styles={{
-          content: {
-            background: "linear-gradient(180deg,#071120 0%, #0d1d36 100%)",
+  opened={opened}
+  onClose={close}
+  withCloseButton={false}
+  position="right"
+  padding={0}
+  size={{ base: "100%", xs: "90%", sm: "85%" }}
+  scrollAreaComponent={ScrollArea.Autosize}
+  styles={{
+    content: {
+      background:
+        "linear-gradient(180deg,#071120 0%, #0d1d36 45%, #12284a 100%)",
+      display: "flex",
+      flexDirection: "column",
+    },
 
-            overflow: "hidden",
-          },
-        }}
-      >
-        {/* HEADER */}
+    body: {
+      padding: 0,
+      flex: 1,
+      overflow: "hidden",
+    },
+  }}
+>
+  {/* ================= HEADER ================= */}
 
-        <Box
-          px="lg"
-          py="md"
-          style={{
-            borderBottom: "1px solid rgba(255,255,255,0.08)",
+  <Box
+    px="lg"
+    py="md"
+    style={{
+      borderBottom: "1px solid rgba(255,255,255,.08)",
+      background: "rgba(255,255,255,.04)",
+      backdropFilter: "blur(20px)",
+      position: "sticky",
+      top: 0,
+      zIndex: 100,
+    }}
+  >
+    <Group justify="space-between">
+      <Group gap={12}>
+        <Image
+          src={logo}
+          w={46}
+          h={46}
+          fit="contain"
+        />
 
-            background: "rgba(255,255,255,0.03)",
+        <Box>
+          <Text
+            fw={900}
+            size="lg"
+            c="white"
+          >
+            <span style={{ color: "#ff7b00" }}>IISJ</span>{" "}
+            Collective
+          </Text>
 
-            backdropFilter: "blur(10px)",
-          }}
-        >
-          <Group justify="space-between">
-            <Group gap={10}>
-              <Image src={logo} w={42} h={42} fit="contain" />
-
-              <Text fw={800} size="lg">
-                <span
-                  style={{
-                    color: "#ff7b00",
-                  }}
-                >
-                  IISJ
-                </span>
-
-                <span
-                  style={{
-                    color: "white",
-                  }}
-                >
-                  Collective
-                </span>
-              </Text>
-            </Group>
-
-            <Burger opened={opened} onClick={close} color="white" />
-          </Group>
+          <Text
+            size="xs"
+            c="gray.5"
+          >
+            Social Justice • Leadership
+          </Text>
         </Box>
+      </Group>
 
-        {/* MENU */}
+      <Burger
+        opened={opened}
+        onClick={close}
+        color="white"
+      />
+    </Group>
+  </Box>
 
-        <Stack gap="xs" p="lg">
+  {/* ================= MENU ================= */}
+
+  <ScrollArea
+    h="calc(100vh - 82px)"
+    scrollbarSize={4}
+    offsetScrollbars
+    style={{
+      WebkitOverflowScrolling: "touch",
+    }}
+  >
+    <Stack
+      gap="lg"
+      p="lg"
+      pb={120}
+    >
+      {/* MAIN MENU */}
+
+      <Box>
+        <Text
+          mb="sm"
+          size="xs"
+          fw={700}
+          c="orange"
+          tt="uppercase"
+        >
+          Main Menu
+        </Text>
+
+        <Stack gap={10}>
           {[
-            {
-              label: "Home",
-              path: "/",
-            },
-
-            {
-              label: "About",
-              path: "/about",
-            },
-
-            {
-              label: "Contact",
-              path: "/contact",
-            },
-
-            {
-              label: "News & Stories",
-              path: "/blogs",
-            },
-          ].map((item, index) => (
+            { label: "Home", path: "/" },
+            { label: "Our Work", path: "/about" },
+            { label: "Contact", path: "/contact" },
+            { label: "News & Stories", path: "/blogs" },
+          ].map((item) => (
             <Box
-              key={index}
+              key={item.path}
               component={Link}
               to={item.path}
               onClick={close}
@@ -589,210 +618,178 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              <motion.div whileTap={{ scale: 0.98 }}>
-                <Box
-                  px="lg"
-                  py="md"
-                  style={{
-                    borderRadius: "18px",
+              <Box
+                px="lg"
+                py="md"
+                style={{
+                  borderRadius: 18,
+                  cursor: "pointer",
+                  transition: ".25s",
 
-                    background:
-                      location.pathname === item.path
-                        ? "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)"
-                        : "rgba(255,255,255,0.04)",
+                  background:
+                    location.pathname === item.path
+                      ? "linear-gradient(135deg,#ff7b00,#ff9d3d)"
+                      : "rgba(255,255,255,.05)",
 
-                    border: "1px solid rgba(255,255,255,0.06)",
+                  border:
+                    location.pathname === item.path
+                      ? "none"
+                      : "1px solid rgba(255,255,255,.06)",
 
-                    color: "white",
-
-                    fontWeight: 600,
-
-                    fontSize: "15px",
-                  }}
-                >
-                  {item.label}
-                </Box>
-              </motion.div>
+                  color: "white",
+                  fontWeight: 600,
+                }}
+              >
+                {item.label}
+              </Box>
             </Box>
           ))}
-
-          {/* INFORMATION */}
-
-          <Box mt="md">
-            <Text c="orange" fw={700} size="sm" tt="uppercase" mb="sm">
-              Information
-            </Text>
-
-            <Stack gap="xs">
-              {[
-                {
-                  label: "IISJ",
-                  path: "/IISJ  ",
-                },
-
-                {
-                  label: "Gallery",
-                  path: "/gallery",
-                },
-
-                {
-                  label: "News & Stories",
-                  path: "/blogs",
-                },
-
-                {
-                  label: "About Vimal Kumar",
-                  path: "/Vimal-Kumar",
-                },
-                {
-                  label: "What We Do",
-                  path: "/What-We-Do",
-                  
-                },
-
-                {
-                  label: "Team",
-                  path: "/Team",
-                },
-
-                {
-                  label: "Events",
-                  path: "/Events",
-                },
-              ].map((item, index) => (
-                <Box
-                  key={index}
-                  component={Link}
-                  to={item.path}
-                  onClick={close}
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Box
-                    px="md"
-                    py="sm"
-                    style={{
-                      borderRadius: "16px",
-
-                      background: "rgba(255,255,255,0.04)",
-
-                      border: "1px solid rgba(255,255,255,0.05)",
-
-                      color: "white",
-
-                      fontSize: "14px",
-
-                      fontWeight: 500,
-                    }}
-                  >
-                    {item.label}
-                  </Box>
-                </Box>
-              ))}
-            </Stack>
-          </Box>
-
-          {/* PROJECTS */}
-
-          <Box mt="md">
-            <Text c="orange" fw={700} size="sm" tt="uppercase" mb="sm">
-              Our Projects
-            </Text>
-
-            <Stack gap="xs">
-              {[
-                {
-                  label: "Community Resource Centers",
-
-                  path: "/Community-Resource-Centers",
-                },
-
-                {
-                  label: "Fellows For Equality",
-
-                  path: "/Fellowship-Equality",
-                },
-
-                // {
-                //   label: "Fellowship Application",
-
-                //   path: "/Fellowship-Program-app",
-                // },
-
-                {
-                  label: "Support MSC",
-
-                  path: "/support-msc",
-                },
-
-                {
-                  label: "AVARNA Foundation",
-
-                  path: "/avarna",
-                },
-
-                {
-                  label: "Scavenger Communities",
-
-                  path: "/MSC-Detail",
-                },
-              ].map((item, index) => (
-                <Box
-                  key={index}
-                  component={Link}
-                  to={item.path}
-                  onClick={close}
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Box
-                    px="md"
-                    py="sm"
-                    style={{
-                      borderRadius: "16px",
-
-                      background: "rgba(255,255,255,0.04)",
-
-                      border: "1px solid rgba(255,255,255,0.05)",
-
-                      color: "white",
-
-                      fontSize: "14px",
-
-                      fontWeight: 500,
-                    }}
-                  >
-                    {item.label}
-                  </Box>
-                </Box>
-              ))}
-            </Stack>
-          </Box>
-
-          {/* BUTTON */}
-
-          <Button
-            component={Link}
-            to="/support-msc"
-            mt="xl"
-            size="lg"
-            radius="xl"
-            rightSection={<FaArrowRight size={14} />}
-            onClick={close}
-            style={{
-              background: "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
-
-              border: "none",
-
-              boxShadow: "0 12px 30px rgba(255,123,0,0.28)",
-            }}
-          >
-            Donate Now
-          </Button>
         </Stack>
-      </Drawer>
+      </Box>
+
+      <Divider color="rgba(255,255,255,.08)" />
+
+      {/* ABOUT */}
+
+      <Box>
+        <Text
+          mb="sm"
+          size="xs"
+          fw={700}
+          c="orange"
+          tt="uppercase"
+        >
+          About Us
+        </Text>
+
+        <Stack gap={10}>
+          {[
+            { label: "IISJ", path: "/IISJ" },
+            { label: "Gallery", path: "/gallery" },
+            { label: "News & Stories", path: "/blogs" },
+            { label: "Our Founder", path: "/Vimal-Kumar" },
+            { label: "What We Do", path: "/What-We-Do" },
+            { label: "Team", path: "/Team" },
+            { label: "Events", path: "/Events" },
+          ].map((item) => (
+            <Box
+              key={item.path}
+              component={Link}
+              to={item.path}
+              onClick={close}
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <Box
+                px="md"
+                py="sm"
+                style={{
+                  borderRadius: 16,
+                  cursor: "pointer",
+                  transition: ".25s",
+                  background: "rgba(255,255,255,.05)",
+                  border: "1px solid rgba(255,255,255,.06)",
+                  color: "white",
+                  fontWeight: 500,
+                }}
+              >
+                {item.label}
+              </Box>
+            </Box>
+          ))}
+        </Stack>
+      </Box>
+
+      <Divider color="rgba(255,255,255,.08)" />
+
+      {/* PROJECTS */}
+
+      <Box>
+        <Text
+          mb="sm"
+          size="xs"
+          fw={700}
+          c="orange"
+          tt="uppercase"
+        >
+          Our Projects
+        </Text>
+
+        <Stack gap={10}>
+          {[
+            {
+              label: "Community Resource Centers",
+              path: "/Community-Resource-Centers",
+            },
+            {
+              label: "Fellows For Equality",
+              path: "/Fellowship-Equality",
+            },
+            {
+              label: "Support MSC",
+              path: "/support-msc",
+            },
+            {
+              label: "AVARNA Foundation",
+              path: "/avarna",
+            },
+            {
+              label: "Scavenger Communities",
+              path: "/MSC-Detail",
+            },
+          ].map((item) => (
+            <Box
+              key={item.path}
+              component={Link}
+              to={item.path}
+              onClick={close}
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <Box
+                px="md"
+                py="sm"
+                style={{
+                  borderRadius: 16,
+                  cursor: "pointer",
+                  transition: ".25s",
+                  background: "rgba(255,255,255,.05)",
+                  border: "1px solid rgba(255,255,255,.06)",
+                  color: "white",
+                  fontWeight: 500,
+                }}
+              >
+                {item.label}
+              </Box>
+            </Box>
+          ))}
+        </Stack>
+      </Box>
+
+      {/* DONATE */}
+
+      <Button
+        component={Link}
+        to="/support-msc"
+        onClick={close}
+        size="lg"
+        radius="xl"
+        fullWidth
+        rightSection={<FaArrowRight />}
+        style={{
+          marginTop: 20,
+          background:
+            "linear-gradient(135deg,#ff7b00 0%, #ff9d3d 100%)",
+          boxShadow: "0 15px 35px rgba(255,123,0,.35)",
+        }}
+      >
+        Donate Now
+      </Button>
+    </Stack>
+  </ScrollArea>
+</Drawer>
     </>
   );
 }

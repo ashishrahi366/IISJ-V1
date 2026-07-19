@@ -29,7 +29,7 @@ const Home = () => {
         <div>
             <HomeHeroSection/>
 
-            <IISJHeroIntro/>
+            <IISJHeroIntro/>    
             <OrganizationFamilySection/>
             <EcosystemDiagram/>
             <WhyIISJ/>

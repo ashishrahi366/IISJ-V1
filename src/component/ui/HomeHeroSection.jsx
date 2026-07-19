@@ -12,7 +12,8 @@ import {
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Logomark_Digital.png";
+// import logo from "../../assets/Logomark_Digital.png";
+import logo from "../../assets/home/Logo-Full.png";
 import mainHero1 from "../../assets/home/TestHomepage.jpeg";
 import mainHero2 from "../../assets/home/heroTest.avif";
 
@@ -68,7 +69,6 @@ export default function HomeHeroSection() {
       <Container size="xl" pos="relative" style={{ zIndex: 2 }}>
         <Grid align="center" gutter={50}>
           {/* LEFT CONTENT */}
-
           <Grid.Col span={{ base: 12, md: 7 }}>
             <MotionBox
               initial={{ opacity: 0, y: 30 }}
@@ -76,30 +76,36 @@ export default function HomeHeroSection() {
               transition={{ duration: 0.7 }}
             >
               {/* LOGO */}
-
-              <Group mb="xl">
-                <Image src={logo} alt="IISJ Logo" w={65} h={65} fit="contain" />
+              <Group mb="xl" gap="lg" align="center">
+                <Image
+                  src={logo}
+                  alt="IISJ Logo"
+                  w={110}
+                  h={110}
+                  fit="contain"
+                />
 
                 <Box>
                   <Text
                     c="orange.4"
-                    fw={700}
-                    size="sm"
+                    fw={800}
+                    size="lg"
                     tt="uppercase"
-                    style={{ letterSpacing: 1 }}
+                    style={{
+                      letterSpacing: "1.5px",
+                      lineHeight: 1.3,
+                    }}
                   >
-                    International institute for social justice
+                    International Institute for Social Justice
                   </Text>
 
-                  <Text c="gray.4" size="sm">
+                  <Text c="gray.4" size="md" mt={6}>
                     Education • Leadership • Entrepreneurship • Mental Health
                   </Text>
                 </Box>
               </Group>
-
               {/* HEADING */}
-
-              <Title
+              {/* <Title
                 order={1}
                 c="white"
                 fw={900}
@@ -113,10 +119,8 @@ export default function HomeHeroSection() {
                 Through Social
                 <br />
                 Justice & Action
-              </Title>
-
+              </Title> */}
               {/* CONTENT */}
-
               <Text
                 c="gray.3"
                 size="lg"
@@ -126,14 +130,12 @@ export default function HomeHeroSection() {
                   lineHeight: 1.9,
                 }}
               >
-                IISJ, Based in the United States, This institue focuses on
-                global dialogue, academic bridge-building, policy research and
-                training around systemic inequality and social justice
-                {/* IISJ works alongside marginalized communities to create access
-                to education, leadership opportunities, community development,
-                and sustainable social transformation across India. */}
+                The International Institute for Social Justice (IISJ) is the
+                umbrella institution bringing together specialized initiatives
+                advancing education, leadership, research, entrepreneurship, and
+                social justice for historically marginalized communities across
+                the world.
               </Text>
-
               <Text
                 c="gray.5"
                 mt="md"
@@ -142,13 +144,20 @@ export default function HomeHeroSection() {
                   lineHeight: 1.8,
                 }}
               >
-                Through grassroots initiatives, youth leadership programs, and
-                community resource centers, we empower people to challenge
-                inequality and build a future rooted in dignity and inclusion.
+                Through its flagship initiatives — Movement for Scavenger
+                Community (MSC), Avarna Education & Training Foundation, and The
+                Second Wind — IISJ transforms grassroots efforts into
+                sustainable social change. MSC advances community empowerment,
+                dignity, and justice for sanitation workers and scavenger
+                communities through advocacy, education, and community resource
+                centres. Avarna builds pathways for educational access,
+                fellowships, leadership development, entrepreneurship, and
+                professional training. The Second Wind promotes social
+                innovation, inclusive entrepreneurship, consulting, and
+                sustainable economic opportunities that empower individuals and
+                communities to thrive.
               </Text>
-
               {/* BUTTONS */}
-
               <Group mt={35}>
                 <Button
                   component={Link}
@@ -164,24 +173,10 @@ export default function HomeHeroSection() {
                 >
                   Explore IISJ
                 </Button>
-
-                <Button
-                  component={Link}
-                  to="/contact"
-                  size="lg"
-                  radius="xl"
-                  variant="white"
-                  color="dark"
-                  px={30}
-                >
-                  Join Our Mission
-                </Button>
               </Group>
             </MotionBox>
           </Grid.Col>
-
           {/* RIGHT IMAGE */}
-
           <Grid.Col span={{ base: 12, md: 5 }}>
             <MotionBox
               initial={{ opacity: 0, scale: 0.92 }}
