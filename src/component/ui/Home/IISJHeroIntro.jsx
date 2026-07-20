@@ -84,50 +84,21 @@ export default function IISJHeroIntro() {
                   fw={900}
                   style={{
                     fontSize: "clamp(42px,6vw,68px)",
-                    lineHeight: 1.05,
+                    lineHeight: 1.1,
                   }}
                 >
-                  One Vision.
-                  <br />
-                  <Text
-                    span
-                    c="orange"
-                  >
+                  <Box component="span" display="block">
+                    One Vision.
+                  </Box>
+
+                  <Box component="span" display="block" mt={8}>
                     Multiple Initiatives.
-                  </Text>
-                  <br />
-                  Global Impact.
+                  </Box>
+
+                  <Box component="span" display="block" mt={8}>
+                    Global Impact.
+                  </Box>
                 </Title>
-
-                <Text
-                  size="lg"
-                  c="dimmed"
-                  style={{
-                    lineHeight: 1.9,
-                    maxWidth: 650,
-                  }}
-                >
-                  The <strong>International Institute for Social Justice
-                  (IISJ)</strong> is the umbrella institution bringing together
-                  specialized initiatives advancing education, leadership,
-                  research, entrepreneurship, and social justice for
-                  historically marginalized communities across the world.
-                </Text>
-
-                <Text
-                  size="lg"
-                  c="dimmed"
-                  style={{
-                    lineHeight: 1.9,
-                    maxWidth: 650,
-                  }}
-                >
-                  Through its flagship initiatives —
-                  <strong> Movement for Scavenger Community (MSC)</strong>,
-                  <strong> Avarna Education & Training Foundation</strong>, and
-                  <strong> The Second Wind</strong> — IISJ transforms grassroots
-                  action into sustainable global impact.
-                </Text>
 
                 <Group mt="md">
                   <Button
@@ -157,40 +128,26 @@ export default function IISJHeroIntro() {
 
                 <Group mt={35} gap="xl">
                   <Group gap="sm">
-                    <ThemeIcon
-                      radius="xl"
-                      color="orange"
-                      variant="light"
-                    >
+                    <ThemeIcon radius="xl" color="orange" variant="light">
                       <FaUsers />
                     </ThemeIcon>
 
                     <div>
                       <Text fw={700}>Global Partnerships</Text>
-                      <Text
-                        size="sm"
-                        c="dimmed"
-                      >
+                      <Text size="sm" c="dimmed">
                         Connecting institutions worldwide
                       </Text>
                     </div>
                   </Group>
 
                   <Group gap="sm">
-                    <ThemeIcon
-                      radius="xl"
-                      color="orange"
-                      variant="light"
-                    >
+                    <ThemeIcon radius="xl" color="orange" variant="light">
                       <FaGraduationCap />
                     </ThemeIcon>
 
                     <div>
                       <Text fw={700}>Leadership & Education</Text>
-                      <Text
-                        size="sm"
-                        c="dimmed"
-                      >
+                      <Text size="sm" c="dimmed">
                         Building future changemakers
                       </Text>
                     </div>
@@ -233,18 +190,11 @@ export default function IISJHeroIntro() {
                     boxShadow: "0 20px 50px rgba(0,0,0,.12)",
                   }}
                 >
-                  <Text
-                    fw={700}
-                    c="orange"
-                  >
+                  <Text fw={700} c="orange">
                     Umbrella Institution
                   </Text>
 
-                  <Text
-                    mt="xs"
-                    size="sm"
-                    c="dimmed"
-                  >
+                  <Text mt="xs" size="sm" c="dimmed">
                     Providing strategic leadership, governance, research,
                     collaboration, and global partnerships for all IISJ
                     initiatives.
@@ -258,17 +208,13 @@ export default function IISJHeroIntro() {
                     right: -20,
                     top: 40,
                     width: 220,
-                    background:
-                      "linear-gradient(135deg,#ff7b00,#ff9d3d)",
+                    background: "linear-gradient(135deg,#ff7b00,#ff9d3d)",
                     color: "white",
                     borderRadius: 26,
                     boxShadow: "0 25px 60px rgba(255,123,0,.35)",
                   }}
                 >
-                  <Text
-                    fw={700}
-                    size="xl"
-                  >
+                  <Text fw={700} size="xl">
                     3
                   </Text>
 

@@ -33,18 +33,18 @@ const Home = () => {
             <OrganizationFamilySection/>
             <EcosystemDiagram/>
             <WhyIISJ/>
-            <EcosystemStats/>
+            {/* <EcosystemStats/> */}
             {/* <InitiativeCard/> */}
 
 
             <HeroCarousel/>
             <MSCOverview/>
             <HomeQuickAccess/>
-            <HeroSection/>  
+            {/* <HeroSection/>   */}
             <AvarnaPreview/>
             <MediaCoverageSection/>
-            <ServicesSection/>
-            <DRBRAAni/>
+            {/* <ServicesSection/> */}
+            {/* <DRBRAAni/> */}
             <StatsSection/>
             <DonateSection/>
             <LeaderSection/>

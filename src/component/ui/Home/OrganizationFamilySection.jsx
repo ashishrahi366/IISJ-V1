@@ -2,7 +2,7 @@ import React from "react";
 import {
   Box,
   Container,
- Title,
+  Title,
   Text,
   SimpleGrid,
   Card,
@@ -22,6 +22,10 @@ import {
   FaLeaf,
 } from "react-icons/fa";
 
+import MSC_Back from "../../../assets/MSC/MSC_Back.jpg";
+import Secondwindjpg from "../../../assets/home/Secondwindjpg.jpg";
+import AvrnaLogo from "../../../assets/home/AvrnaLogo.jpeg";
+
 const MotionCard = motion(Card);
 
 const organizations = [
@@ -30,7 +34,7 @@ const organizations = [
     short: "Grassroots Justice",
     description:
       "Ending manual scavenging, advancing the rights of sanitation workers, strengthening communities, promoting dignity through education, advocacy, legal empowerment, and Community Resource Centres.",
-    logo: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    logo: MSC_Back,
     icon: <FaBuilding />,
     color: "#ff7b00",
     path: "/MSC-Detail",
@@ -40,9 +44,9 @@ const organizations = [
     short: "Education & Leadership",
     description:
       "Creating educational opportunities, fellowships, leadership development, entrepreneurship programmes, professional training, and youth empowerment for historically marginalized communities.",
-    logo: "https://cdn-icons-png.flaticon.com/512/2436/2436874.png",
+    logo: AvrnaLogo,
     icon: <FaGraduationCap />,
-    color: "#2563eb",
+    color: "#ff7b00",
     path: "/avarna",
   },
   {
@@ -50,9 +54,9 @@ const organizations = [
     short: "Social Innovation",
     description:
       "Supporting inclusive entrepreneurship, innovation, consulting, and sustainable economic opportunities that generate long-term social impact for underserved communities.",
-    logo: "https://cdn-icons-png.flaticon.com/512/2909/2909763.png",
+    logo: Secondwindjpg,
     icon: <FaLeaf />,
-    color: "#16a34a",
+    color: "#ff7b00",
     path: "/Second-Wind",
   },
 ];
@@ -62,22 +66,21 @@ export default function OrganizationFamilySection() {
     <Box
       py={120}
       style={{
-        background:
-          "linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)",
+        background: "linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)",
       }}
     >
       <Container size="xl">
         {/* Header */}
 
         <Stack align="center" mb={70}>
-          <Badge
+          {/* <Badge
             color="orange"
             size="lg"
             radius="xl"
             variant="light"
           >
             Our Family of Organizations
-          </Badge>
+          </Badge> */}
 
           <Title
             ta="center"
@@ -92,14 +95,9 @@ export default function OrganizationFamilySection() {
             Three Specialized Initiatives.
           </Title>
 
-          <Text
-            ta="center"
-            maw={900}
-            size="lg"
-            c="dimmed"
-            lh={1.9}
-          >
-            The <strong>International Institute for Social Justice (IISJ)</strong>{" "}
+          <Text ta="center" maw={900} size="lg" c="dimmed" lh={1.9}>
+            The{" "}
+            <strong>International Institute for Social Justice (IISJ)</strong>{" "}
             serves as the umbrella institution providing strategic leadership,
             governance, research, partnerships, and international collaboration
             across its flagship initiatives. Each initiative has a distinct role
@@ -151,34 +149,25 @@ export default function OrganizationFamilySection() {
                 }}
               />
 
-              <Stack
-                align="center"
-                mt={10}
-                h="100%"
-              >
-                <Image
-                  src={item.logo}
-                  w={95}
-                  h={95}
-                  fit="contain"
-                />
+              <Stack align="center" mt={10} h="100%">
+                <Image src={item.logo} w={95} h={95} fit="contain" />
 
-                <ThemeIcon
+                {/* <ThemeIcon
                   size={54}
                   radius="xl"
                   variant="light"
                   color={item.color}
                 >
                   {item.icon}
-                </ThemeIcon>
+                </ThemeIcon> */}
 
-                <Badge
+                {/* <Badge
                   color="orange"
                   radius="xl"
                   variant="light"
                 >
                   {item.short}
-                </Badge>
+                </Badge> */}
 
                 <Title
                   order={3}
@@ -222,16 +211,12 @@ export default function OrganizationFamilySection() {
           p={40}
           style={{
             borderRadius: 30,
-            background:
-              "linear-gradient(135deg,#ff7b00,#ff9d3d)",
+            background: "linear-gradient(135deg,#ff7b00,#ff9d3d)",
             color: "white",
             textAlign: "center",
           }}
         >
-          <Title
-            order={2}
-            fw={900}
-          >
+          <Title order={2} fw={900}>
             Together We Create Social Justice
           </Title>
 
