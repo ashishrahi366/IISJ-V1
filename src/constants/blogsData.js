@@ -13,7 +13,7 @@ import JNBlog from "../assets/Blogs/JNBlog.jpg";
 import GDBlog from "../assets/Blogs/GDBlog.webp";
 import BSBlog from "../assets/Blogs/BSBlog.webp";
 
-import HWPO from "../assets/Blogs/HWPO.webp";
+import HWPO from "../assets/Blogs/featuredBlog.jpeg";
 import HWPO1jpg from "../assets/Blogs/HWPO1jpg.webp";
 import HWPO2 from "../assets/Blogs/HWPO2.webp";
 import HWPO4 from "../assets/Blogs/HWPO4.jpg";
@@ -27,103 +27,202 @@ import CRNA_33 from "../assets/Blogs/CRNA_33.webp";
 
 import CA3 from "../assets/pages/CA3.jpg";
 import FS1 from "../assets/pages/FS1.webp";
-import about1 from "../assets/pages/about1-msc.webp";
+import about1 from "../assets/Blogs/futureLeaders.jpeg";
 
 
 export const blogsData = [
-    {
-        id: 1,
-        slug: "fellows-for-equality-2022",
+      {
+        id: 5,
+        slug: "Hard-Work-Pays-Off",
         category: "Leadership",
         tags: [
             "Fellowship",
-            "Leadership",
-            "Equality",
-            "Youth",
+            "Youth Leaders",
             "Community",
+            "Equality",
         ],
-        title: "We are searching for Fellows for Equality in 2026",
-        shortDescription:
-            "MSC is searching for future leaders from the scavenger community to drive equality and social transformation.",
+        title: "Hard Work Pays Off: New MSC-Center in Bhiwani",
+        shortDescription: "Good work comes from within. Our Fellows for Equality and other volunteers don’t stop working for a better world. They even managed to open a new Community Center in Bhiwani.",
         author: "MSC Editorial Team",
-        date: "May 14, 2026",
+        date: "February 29, 2026",
         readTime: "5 min read",
         featured: true,
-        coverImage: FFE_B,
+        coverImage: HWPO,
         coverImageAlt:
-            "Fellows for Equality leadership workshop participants",
+            "MSC fellows and leadership participants group photo",
 
         content: [
+
+
+            {
+                type: "image",
+                image: HWPO1jpg,
+                caption:
+                    "Fellows participating in national workshops and leadership activities.",
+            },
+            {
+                type: "heading",
+                text: "New Community Center in Haryana",
+            },
             {
                 type: "paragraph",
-                text:
-                    "It’s fellow time again! MSC is searching for the future leaders of the movement. Since 2019, the Fellows for Equality initiative has supported young community members in creating social impact projects and leadership programs.",
+                text: `
+                    Every state of India is affected by caste discrimination and violence, but Haryana is quite popular for violence 
+                    and crime. Our community members point towards a different truth and engage in education and a better future for the 
+                    scavenger community.
+                `
+            },
+            {
+                type: "image",
+                image: HWPO2,
+                caption:
+                    "Our fellow Sanjeev at the opening ceremony.",
+            },
+            {
+                type: "paragraph",
+                text: `
+                On November 22nd we could happily announce that another MSC-Center has been opened in Kacchi Line, Bhiwani, Haryana. 
+                Many people were involved in organizing and convincing the local community to join the movement for equality. Sanjiv 
+                Rose, our former Fellow for Equality, Preeit Kangra and Rajat Kangra showed outstanding engagement, but definitely weren’t 
+                the only ones who helped us make this happen.
+                `
             },
 
             {
-                type: "paragraph",
-                text:
-                    "The fellowship aims to empower youth from scavenger communities by equipping them with leadership skills, education, advocacy knowledge, and grassroots organizing experience.",
+                type: "heading",
+                text: "Opening Ceremony With Special Guests",
             },
 
             {
                 type: "image",
-                image: CA3,
+                image: HWPO4,
                 caption:
-                    "Young leaders participating in community training and fellowship workshops.",
+                    "MSC’s founder Vimal with guests from Solan",
+            },
+            {
+                type: "paragraph",
+                text: `
+                Bhiwani lines up in a row of successfully running community centers for the scavenger community. The principle behind 
+                these education hubs is not only selfhelp amongst the local community but also the connection to a nationwide network of 
+                scavenger communities.
+                `,
+            },
+            {
+                type: "image",
+                image: HWPO3,
+                caption:
+                    "Sagar came from Ladwa with love.",
             },
 
             {
-                type: "heading",
-                text: "Building Future Leaders",
-            },
-
-            {
                 type: "paragraph",
-                text:
-                    "Movement for Scavenger Community (MSC) is building a movement where young people become catalysts for social transformation. Fellows work on education, community empowerment, equality, and human dignity.",
-            },
-
-            {
-                type: "quote",
-                text:
-                    "We are training the leaders of the future through grassroots action and collective empowerment.",
-                author: "MSC",
-            },
-            {
-                type: "heading",
-                text: "What MSC is doing",
+                text: `
+                Hence, the opening ceremony was joined by guests from the Dr. B. R. Ambedkar Community Resource Center in Solan, 
+                Himachal Pradesh and Ladwa, Haryana. The guests shared their own experience of social work and also reminded the recently 
+                joined community that there is still a lot of work to do.
+                `,
             },
             {
                 type: "paragraph",
-                text: `Movement for Scavenger Community (MSC) is a growing movement amongst the scavenger community in India.
-                 We believe that every member of our community has the power to pave their own way to success. Unfortunately,
-                  caste discrimination, family issues and struggles in the educational and work sector are challenges, which we have to
-                   overcome. MSC focusses on stabilizing scavenger communities by connecting people with the same background and establishing 
-                   educational hubs all over India.Our community centres are run by the community to create trust in themselves`,
-            },
-            {
-                type: "heading",
-                text: "What you will be doing",
-            },
-            {
-                type: "paragraph",
-                text: `Connecting people and lighting the fire of our community is one way to success, but every fire needs a spark. To spread our movement across India and the world,
-                 we need more sparks: young and engaged leaders who raise their voice and encourage others to use their skills and engage in community projects.
-                 As our next Fellow for Equality, you will become future leader of our community.
-                 Within on year, you will learn how to work on your own social projects, encourage others and connect to other leaders all over India. Your training and supervision will be done by a Senior Fellow as well as our MSC-Team.
-                 In several workshops you will travel across the country and get to know other young leaders from sweeper families, who run their own independent projects within their community. Together, we will develop a concept how you can make a change yourself and will take care of a funding for your community projects.`,
-            },
-            {
-                type: "heading",
-                text: "Apply now!",
-            },
-            {
-                type: "paragraph",
-                text: "Are you ready to work towards a better future of our community? Then apply and become our next Fellow for Equality. We are looking forward to reading from you! The application will run until January 14th, so better be quick!"
-            },
+                text: `
+                Together, we can make the world a better place! Thanks for joinging us, Bhiwani.
+                `,
+            }
         ],
     },
+    // {
+    //     id: 1,
+    //     slug: "fellows-for-equality-2022",
+    //     category: "Leadership",
+    //     tags: [
+    //         "Fellowship",
+    //         "Leadership",
+    //         "Equality",
+    //         "Youth",
+    //         "Community",
+    //     ],
+    //     title: "We are searching for Fellows for Equality in 2026",
+    //     shortDescription:
+    //         "MSC is searching for future leaders from the scavenger community to drive equality and social transformation.",
+    //     author: "MSC Editorial Team",
+    //     date: "May 14, 2026",
+    //     readTime: "5 min read",
+    //     featured: true,
+    //     coverImage: FFE_B,
+    //     coverImageAlt:
+    //         "Fellows for Equality leadership workshop participants",
+
+    //     content: [
+    //         {
+    //             type: "paragraph",
+    //             text:
+    //                 "It’s fellow time again! MSC is searching for the future leaders of the movement. Since 2019, the Fellows for Equality initiative has supported young community members in creating social impact projects and leadership programs.",
+    //         },
+
+    //         {
+    //             type: "paragraph",
+    //             text:
+    //                 "The fellowship aims to empower youth from scavenger communities by equipping them with leadership skills, education, advocacy knowledge, and grassroots organizing experience.",
+    //         },
+
+    //         {
+    //             type: "image",
+    //             image: CA3,
+    //             caption:
+    //                 "Young leaders participating in community training and fellowship workshops.",
+    //         },
+
+    //         {
+    //             type: "heading",
+    //             text: "Building Future Leaders",
+    //         },
+
+    //         {
+    //             type: "paragraph",
+    //             text:
+    //                 "Movement for Scavenger Community (MSC) is building a movement where young people become catalysts for social transformation. Fellows work on education, community empowerment, equality, and human dignity.",
+    //         },
+
+    //         {
+    //             type: "quote",
+    //             text:
+    //                 "We are training the leaders of the future through grassroots action and collective empowerment.",
+    //             author: "MSC",
+    //         },
+    //         {
+    //             type: "heading",
+    //             text: "What MSC is doing",
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             text: `Movement for Scavenger Community (MSC) is a growing movement amongst the scavenger community in India.
+    //              We believe that every member of our community has the power to pave their own way to success. Unfortunately,
+    //               caste discrimination, family issues and struggles in the educational and work sector are challenges, which we have to
+    //                overcome. MSC focusses on stabilizing scavenger communities by connecting people with the same background and establishing 
+    //                educational hubs all over India.Our community centres are run by the community to create trust in themselves`,
+    //         },
+    //         {
+    //             type: "heading",
+    //             text: "What you will be doing",
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             text: `Connecting people and lighting the fire of our community is one way to success, but every fire needs a spark. To spread our movement across India and the world,
+    //              we need more sparks: young and engaged leaders who raise their voice and encourage others to use their skills and engage in community projects.
+    //              As our next Fellow for Equality, you will become future leader of our community.
+    //              Within on year, you will learn how to work on your own social projects, encourage others and connect to other leaders all over India. Your training and supervision will be done by a Senior Fellow as well as our MSC-Team.
+    //              In several workshops you will travel across the country and get to know other young leaders from sweeper families, who run their own independent projects within their community. Together, we will develop a concept how you can make a change yourself and will take care of a funding for your community projects.`,
+    //         },
+    //         {
+    //             type: "heading",
+    //             text: "Apply now!",
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             text: "Are you ready to work towards a better future of our community? Then apply and become our next Fellow for Equality. We are looking forward to reading from you! The application will run until January 14th, so better be quick!"
+    //         },
+    //     ],
+    // },
     {
         id: 2,
         slug: "training-leaders-of-the-future",
@@ -140,7 +239,8 @@ export const blogsData = [
         author: "MSC Editorial Team",
         date: "February 26, 2026",
         readTime: "4 min read",
-        featured: false,
+        featured: true,
+        featured1: true,
         coverImage: about1,
         coverImageAlt:
             "Students and fellows participating in leadership training",
@@ -502,105 +602,7 @@ export const blogsData = [
             }
         ],
     },
-    {
-        id: 5,
-        slug: "Hard-Work-Pays-Off",
-        category: "Leadership",
-        tags: [
-            "Fellowship",
-            "Youth Leaders",
-            "Community",
-            "Equality",
-        ],
-        title: "Hard Work Pays Off: New MSC-Center in Bhiwani",
-        shortDescription: "Good work comes from within. Our Fellows for Equality and other volunteers don’t stop working for a better world. They even managed to open a new Community Center in Bhiwani.",
-        author: "MSC Editorial Team",
-        date: "February 29, 2026",
-        readTime: "5 min read",
-        featured: false,
-        coverImage: HWPO,
-        coverImageAlt:
-            "MSC fellows and leadership participants group photo",
-
-        content: [
-
-
-            {
-                type: "image",
-                image: HWPO1jpg,
-                caption:
-                    "Fellows participating in national workshops and leadership activities.",
-            },
-            {
-                type: "heading",
-                text: "New Community Center in Haryana",
-            },
-            {
-                type: "paragraph",
-                text: `
-                    Every state of India is affected by caste discrimination and violence, but Haryana is quite popular for violence 
-                    and crime. Our community members point towards a different truth and engage in education and a better future for the 
-                    scavenger community.
-                `
-            },
-            {
-                type: "image",
-                image: HWPO2,
-                caption:
-                    "Our fellow Sanjeev at the opening ceremony.",
-            },
-            {
-                type: "paragraph",
-                text: `
-                On November 22nd we could happily announce that another MSC-Center has been opened in Kacchi Line, Bhiwani, Haryana. 
-                Many people were involved in organizing and convincing the local community to join the movement for equality. Sanjiv 
-                Rose, our former Fellow for Equality, Preeit Kangra and Rajat Kangra showed outstanding engagement, but definitely weren’t 
-                the only ones who helped us make this happen.
-                `
-            },
-
-            {
-                type: "heading",
-                text: "Opening Ceremony With Special Guests",
-            },
-
-            {
-                type: "image",
-                image: HWPO4,
-                caption:
-                    "MSC’s founder Vimal with guests from Solan",
-            },
-            {
-                type: "paragraph",
-                text: `
-                Bhiwani lines up in a row of successfully running community centers for the scavenger community. The principle behind 
-                these education hubs is not only selfhelp amongst the local community but also the connection to a nationwide network of 
-                scavenger communities.
-                `,
-            },
-            {
-                type: "image",
-                image: HWPO3,
-                caption:
-                    "Sagar came from Ladwa with love.",
-            },
-
-            {
-                type: "paragraph",
-                text: `
-                Hence, the opening ceremony was joined by guests from the Dr. B. R. Ambedkar Community Resource Center in Solan, 
-                Himachal Pradesh and Ladwa, Haryana. The guests shared their own experience of social work and also reminded the recently 
-                joined community that there is still a lot of work to do.
-                `,
-            },
-            {
-                type: "paragraph",
-                text: `
-                Together, we can make the world a better place! Thanks for joinging us, Bhiwani.
-                `,
-            }
-        ],
-    },
+  
     {
         id: 6,
         slug: "Coronavirus-Social-Distancing",

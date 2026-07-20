@@ -19,7 +19,7 @@ import { FaUser, FaCalendarAlt, FaArrowRight, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { blogsData } from "../../constants/blogsData";
 
-const featuredBlog = blogsData.find((blog) => blog.featured) || blogsData[0];
+const featuredBlog = blogsData.find((blog) => blog.featured1) || blogsData[1];
 
 const otherBlogs = blogsData.filter((blog) => blog.id !== featuredBlog.id);
 

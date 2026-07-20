@@ -22,6 +22,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import DRBRAAni from "../component/ui/DRBRAAni";
 import about3 from "../assets/pages/about3.JPG";
 import vimal1 from "../assets/pages/vimal1.jpeg";
 import leader13 from "../assets/home/leader13.webp";
@@ -326,6 +327,7 @@ export default function VimalKumarLeaderSection() {
           </SimpleGrid>
         </Container>
       </Box>
+      <DRBRAAni/>
 
       {/* LIFE JOURNEY SECTION */}
 

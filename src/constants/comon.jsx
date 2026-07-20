@@ -389,7 +389,7 @@ export const homeServicesSectionData = [
 ];
 
 import leader1 from "../assets/home/Vimalpic2.jpg";
-import leader2 from "../assets/home/KajoriLeader.webp";
+import leader2 from "../assets/pages/kajoriLeader.jpeg";
 import leader3 from "../assets/home/EricLeader.webp";
 export const leaderSectionLeadersData = [
   {
