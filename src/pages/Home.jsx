@@ -38,7 +38,7 @@ const Home = () => {
 
 
             <HeroCarousel/>
-            <MSCOverview/>
+            {/* <MSCOverview/> */}
             <HomeQuickAccess/>
             {/* <HeroSection/>   */}
             <AvarnaPreview/>
@@ -47,7 +47,7 @@ const Home = () => {
             {/* <DRBRAAni/> */}
             <StatsSection/>
             <DonateSection/>
-            <LeaderSection/>
+            {/* <LeaderSection/> */}
             <VideoSection/>
             <HomeRecentNews/>
             <BlogSection/>

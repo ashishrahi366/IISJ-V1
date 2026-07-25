@@ -20,10 +20,8 @@ import { Link } from "react-router-dom";
 import {
   FaArrowRight,
   FaEnvelope,
-  FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
-  FaPhoneAlt,
   FaYoutube,
 } from "react-icons/fa";
 
@@ -134,6 +132,8 @@ function Footer() {
                     radius="xl"
                     variant="light"
                     color="orange"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     component="a"
                     href="https://www.linkedin.com/company/movement-for-scavenger-community-msc/posts/?feedView=all"
                     style={{
@@ -253,7 +253,7 @@ function Footer() {
                       <FaMapMarkerAlt color="#ff7b00" />
 
                       <Text size="sm" c="rgba(255,255,255,0.72)">
-                        Haryana, India
+                        Assam, India
                       </Text>
                     </Group>{" "}
                     <Group gap="sm">

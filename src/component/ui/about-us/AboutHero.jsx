@@ -2,7 +2,7 @@ import { Box, Container, Title, Text, Overlay } from "@mantine/core";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { theme } from "../../../theme";
-import heroImg from "../../../assets/pages/abtHero1.webp";
+import heroImg from "../../../assets/pages/MSCTshirt.jpeg";
 
 function AboutHero() {
   return (
@@ -33,7 +33,7 @@ function AboutHero() {
           style={{ textAlign: "center" }}
         >
           {/* 🏷 Title */}
-          <Title
+          {/* <Title
             order={1}
             style={{
               color: "white",
@@ -42,10 +42,10 @@ function AboutHero() {
             }}
           >
             About Us
-          </Title>
+          </Title> */}
 
           {/* 📍 Breadcrumb / Subtext */}
-          <Text
+          {/* <Text
             mt="sm"
             size="md"
             style={{ color: "rgba(255,255,255,0.8)" }}
@@ -61,10 +61,10 @@ function AboutHero() {
               Home
             </Link>{" "}
             / About
-          </Text>
+          </Text> */}
 
           {/* ✨ Optional Description */}
-          <Text
+          {/* <Text
             mt="md"
             size="sm"
             style={{
@@ -75,7 +75,7 @@ function AboutHero() {
           >
             Learn more about our mission, vision, and the impact we are creating
             to empower communities and bring positive change.
-          </Text>
+          </Text> */}
         </motion.div>
       </Container>
     </Box>

@@ -19,7 +19,6 @@ import { FaHandsHelping, FaHeartbeat, FaBook } from "react-icons/fa";
 
 // 👉 Import your local images
 import img1 from "../../../assets/pages/about1.webp";
-// import img2 from "../../../assets/pages/abtHero1.webp";
 import img2 from "../../../assets/pages/ngo1.webp";
 import img3 from "../../../assets/pages/about3.JPG";
 

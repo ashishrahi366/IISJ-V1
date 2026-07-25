@@ -19,10 +19,13 @@ import {
   FaUsers,
   FaGraduationCap,
 } from "react-icons/fa";
+import { useMediaQuery } from "@mantine/hooks";
+import IISJ_OMG from "../../../assets/home/IISJ_OMG.jpeg";
 
 const MotionBox = motion(Box);
 
 export default function IISJHeroIntro() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <Box
       py={100}
@@ -172,29 +175,41 @@ export default function IISJHeroIntro() {
               >
                 <Image
                   radius={36}
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop"
+                  src={IISJ_OMG}
+                  style={{
+                    minHeight: isMobile ? 420 : "auto",
+                    objectFit: "cover",
+                  }}
                 />
 
                 {/* Floating Card */}
-
                 <Box
-                  p="lg"
+                  p={isMobile ? "sm" : "lg"}
                   style={{
                     position: "absolute",
-                    left: -30,
-                    bottom: 30,
-                    width: 260,
+
+                    left: isMobile ? 12 : -30,
+                    bottom: isMobile ? 12 : 30,
+
+                    width: isMobile ? 180 : 260,
+
                     background: "rgba(255,255,255,.95)",
                     backdropFilter: "blur(20px)",
-                    borderRadius: 26,
+                    borderRadius: 22,
                     boxShadow: "0 20px 50px rgba(0,0,0,.12)",
+                    zIndex: 2,
                   }}
                 >
-                  <Text fw={700} c="orange">
+                  <Text fw={700} c="orange" size={isMobile ? "sm" : "md"}>
                     Umbrella Institution
                   </Text>
 
-                  <Text mt="xs" size="sm" c="dimmed">
+                  <Text
+                    mt="xs"
+                    size={isMobile ? "xs" : "sm"}
+                    c="dimmed"
+                    lh={1.6}
+                  >
                     Providing strategic leadership, governance, research,
                     collaboration, and global partnerships for all IISJ
                     initiatives.

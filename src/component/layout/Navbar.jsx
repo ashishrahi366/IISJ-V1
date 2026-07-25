@@ -301,7 +301,7 @@ function Navbar() {
                     className="navbar-dropdown-item"
                     leftSection={<FaUser size={14} />}
                   >
-                    Team
+                    Our Team
                   </Menu.Item>
 
                   <Menu.Item
@@ -669,7 +669,7 @@ function Navbar() {
             { label: "News & Stories", path: "/blogs" },
             { label: "Our Founder", path: "/Vimal-Kumar" },
             { label: "What We Do", path: "/What-We-Do" },
-            { label: "Team", path: "/Team" },
+            { label: "Our Team", path: "/Team" },
             { label: "Events", path: "/Events" },
           ].map((item) => (
             <Box

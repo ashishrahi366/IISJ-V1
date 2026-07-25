@@ -12,6 +12,7 @@ import MissionVisionValuesSection from "../component/ui/about-us/MissionVisionVa
 import WhatWeDoSection from "../component/ui/about-us/WhatWeDoSection";
 import GalleryPreviewSection from "../component/ui/about-us/GalleryPreviewSection";
 import VolunteerSupportCTA from "../component/ui/about-us/VolunteerSupportCTA";
+import LeaderSection from "../component/ui/LeaderSection";
 
 const About = () => {
   return (
@@ -21,6 +22,7 @@ const About = () => {
       <WhatWeDoSection />
       <AboutusPrimary />
       <AboutHero />
+      <LeaderSection />
       <MSCAboutPreview />
       <AvarnaPreview />
       <IISJPreview />

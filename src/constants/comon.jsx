@@ -12,10 +12,10 @@ import {
   FaBookOpen,
 } from "react-icons/fa";
 
-import member1 from "../assets/pages/founder22.webp";
-import member2 from "../assets/home/KajoriLeader.webp";
+import member1 from "../assets/pages/VimalLeaderNew.jpeg";
+import member2 from "../assets/pages/kaoriLeaderNew.jpeg";
 import member3 from "../assets/home/EricLeader.webp";
-import member4 from "../assets/home/homeHero1.webp";
+import member4 from "../assets/pages/Ashish.jpeg";
 
 export const teamMembers = [
   {
@@ -104,28 +104,23 @@ Her guiding philosophy:
     name: "Ashish Kumar",
     role: "Technical Admin",
     designation: [
-      "Chief Financial Officer",
-      "Treasurer - IISJ",
-      "Leadership Mentor",
-      "Social Justice Advocate",
+      "Technical Admin, International Institute for Social Justice (IISJ)",
     ],
-    desc: `As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of 
-    meaningful change into the hands of anyone with the courage to use them.`,
+    desc: `Ashish serves as the Technical Lead and Volunteer at the International Institute for Social Justice (IISJ), leading the 
+    development and management of the organization's digital platforms, website, and core technical infrastructure. Through his 
+    professional expertise and voluntary service, he strengthens IISJ's digital presence to support education, leadership, and social
+     justice initiatives for marginalized communities.`,
     longDescription: `
-    As one of the foremost practitioners of Adaptive Leadership worldwide, Eric Martin has worked to put the tools of 
-    meaningful change into the hands of anyone with the courage to use them.
-    For twenty years, Eric has been a trusted leadership advisor, facilitator and trainer to senior executives navigating 
-    their defining leadership moments. Over that time his work has reached places such as Patagonia, Google, Microsoft, 
-    the Rockefeller Foundation, United Nations, the Canadian Institute for Advanced Research, and the White House Executive 
-    Office of Presidential Personnel.Eric developed his practice with a deep commitment to bringing the Adaptive Leadership 
-    framework — developed at Harvard Kennedy School — into widespread global application, in 146 countries and touching
-     900,000 people. He serves as graduate faculty at the Milano School of Policy and Management and has lectured at 
-     Harvard Medical School, Cornell University, New York University and the National Academy for Science, Engineering 
-     and Medicine.His books, Your Leadership Moment and the Adaptive Leadership Facilitator Guide, are practitioner 
-     standards used by leaders and facilitators worldwide. He has been published in Fast Company , Stanford Social 
-     Innovation Review and Environmental Leader. Eric is a master facilitator who works at the intersection of technical 
-     rigor and irreducible humanity. A Detroit native, Eric carries that city's particular relationship with grit, 
-     reinvention and the refusal to mistake hardship for destiny.
+Ashish is a dedicated Technology Volunteer and Technical Lead at the International Institute for Social Justice (IISJ), where he oversees
+the organization's website development, digital platforms, and core technical infrastructure. He plays a key role in designing, 
+developing, and maintaining technology solutions that enhance IISJ's ability to connect with communities, partners, supporters worldwide.
+
+By combining technology with purpose, Ashish helps transform ideas into accessible digital experiences that strengthen community 
+engagement, expand outreach, and support the flagship initiatives of IISJ—including the Movement for Scavenger Community (MSC), 
+Avarna Education & Training Foundation.
+His contribution reflects the belief that technology can be a powerful force for social change, enabling organizations to reach more
+people, inspire collective action, and create lasting impact. Through his voluntary service, Ashish demonstrates how professional
+skills can be used to empower communities and support a more inclusive, equitable, and just society.
 `,
     linkedin: "https://www.linkedin.com/in/ashish-rahi-46048321a/",
   },
@@ -388,8 +383,8 @@ export const homeServicesSectionData = [
   },
 ];
 
-import leader1 from "../assets/home/Vimalpic2.jpg";
-import leader2 from "../assets/pages/kajoriLeader.jpeg";
+import leader1 from "../assets/pages/VimalLeaderNew.jpeg";
+import leader2 from "../assets/pages/kaoriLeaderNew.jpeg";
 import leader3 from "../assets/home/EricLeader.webp";
 export const leaderSectionLeadersData = [
   {
