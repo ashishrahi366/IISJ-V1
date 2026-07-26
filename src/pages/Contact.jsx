@@ -26,8 +26,6 @@ import {
   FaGlobeAsia,
   FaUsers,
   FaArrowRight,
-  // FaFacebookF,
-  // FaInstagram,
   FaLinkedinIn,
   FaYoutube,
   FaHeart,
@@ -67,41 +65,6 @@ function ContactPage() {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   const email = form.email.trim();
-
-  //   if (!email) {
-  //     setError("Email is required");
-  //     return;
-  //   }
-
-  //   if (!validateEmail(email)) {
-  //     setError("Enter a valid email");
-  //     return;
-  //   }
-
-  //   setError("");
-  //   setLoading(true);
-
-  //   const result = await sendEmail({
-  //     subject: form.subject || "Contact Form Submission",
-  //     name: form.name,
-  //     email: form.email,
-  //     message: form.message,
-  //   });
-
-  //   setLoading(false);
-
-  //   if (result.success) {
-  //     setSuccess(true);
-  //     setForm({ name: "", email: "", subject: "", message: "" });
-  //   } else {
-  //     setError(result.message || "Failed to send. Please try again.");
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -111,7 +74,6 @@ function ContactPage() {
       setError("Email is required");
       return;
     }
-    console.log(email, "emailemailemail");
     if (!validateEmail(email)) {
       setError("Enter a valid email");
       return;
@@ -255,19 +217,6 @@ function ContactPage() {
                   initiatives, participate in community projects, or simply
                   learn more about our mission.
                 </Text>
-
-                <Group mt={35}>
-                  <Button
-                    component={Link}
-                    to="/Fellowship-Program-app"
-                    color="orange"
-                    radius="xl"
-                    size="md"
-                    rightSection={<FaArrowRight size={14} />}
-                  >
-                    Become a Partner
-                  </Button>
-                </Group>
               </motion.div>
             </Grid.Col>
 
@@ -703,11 +652,11 @@ function ContactPage() {
             },
             {
               image: CA3,
-              title: "Fellowship Program",
+              title: "Dr B.R Ambedkar Community Resource Centre",
               description:
-                "Our fellows live and work at different locations. Working hand in hand with the committee of the local Dr. B. R. Ambedkar Community Resource Centre.",
+                "A hub for education, digital literacy, and community engagement. It serves as a resource center for marginalized communities to access knowledge and opportunities.",
               buttonText: "View Fellowship",
-              link: "/Fellowship-Program-app",
+              link: "/Community-Resource-Centers",
             },
 
             {
@@ -845,13 +794,12 @@ function ContactPage() {
           <Group justify="center" mt={40}>
             <Button
               component={Link}
-              to="/Fellowship-Program-app"
               color="orange"
               radius="xl"
               size="lg"
               rightSection={<FaArrowRight size={14} />}
             >
-              Apply Now
+              Coomming soon
             </Button>
           </Group>
         </Container>

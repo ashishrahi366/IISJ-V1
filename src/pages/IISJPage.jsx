@@ -38,10 +38,10 @@ import {
 import heroImg from "../assets/home/heroHome3.webp";
 import introImg from "../assets/pages/introiisj.webp";
 
-import g1 from "../assets/home/homeHero1.webp";
-import g2 from "../assets/home/homeHero1.webp";
-import g3 from "../assets/home/homeHero1.webp";
-import g4 from "../assets/home/homeHero1.webp";
+import g1 from "../assets/pages/ABTG1.jpeg";
+import g2 from "../assets/pages/ABTG2.jpeg";
+import g3 from "../assets/pages/ABTG3.jpeg";
+import g4 from "../assets/pages/ABTG4.jpeg";
 
 function IISJPage() {
   const scopeData = [

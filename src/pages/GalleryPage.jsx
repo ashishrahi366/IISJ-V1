@@ -20,8 +20,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   communityGallery,
   educationGallery,
-  eventGallery,
-  impactGallery,
+  // eventGallery,
+  // impactGallery,
 } from "../constants/gallery";
 import {
   FaTimes,
@@ -44,11 +44,11 @@ export default function GalleryPage() {
       case "education":
         return educationGallery;
 
-      case "events":
-        return eventGallery;
+      // case "events":
+      //   return eventGallery;
 
-      case "impact":
-        return impactGallery;
+      // case "impact":
+      //   return impactGallery;
 
       default:
         return communityGallery;
@@ -238,10 +238,8 @@ export default function GalleryPage() {
             <Tabs.Tab value="community">Community</Tabs.Tab>
 
             <Tabs.Tab value="education">Education</Tabs.Tab>
-
-            <Tabs.Tab value="events">Events</Tabs.Tab>
-
-            <Tabs.Tab value="impact">Impact</Tabs.Tab>
+            {/* <Tabs.Tab value="events">Events</Tabs.Tab>
+            <Tabs.Tab value="impact">Impact</Tabs.Tab> */}
           </Tabs.List>
         </Tabs>
       </Container>

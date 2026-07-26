@@ -41,10 +41,10 @@ import problemImg from "../assets/MSC/mscCenterProb.webp";
 import projectImg from "../assets/MSC/mscCenter1.webp";
 
 
-import g1 from "../assets/home/homeHero1.webp";
-import g2 from "../assets/home/homeHero1.webp";
-import g3 from "../assets/home/homeHero1.webp";
-import g4 from "../assets/home/homeHero1.webp";
+import g1 from "../assets/pages/FS3.jpg";
+import g2 from "../assets/pages/Gedu1.jpeg";
+import g3 from "../assets/pages/MSCTshirt.jpeg";
+import g4 from "../assets/pages/QuickAccess.jpeg";
 
 export default function MSCPage() {
   return (

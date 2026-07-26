@@ -100,7 +100,7 @@ const blogs = [
 ];
 
 export default function WhatWeDoPage() {
-  const storyBlogIds = [1, 4, 6];
+  const storyBlogIds = [2, 4, 6];
   const storiesBlogs = blogsData.filter((blog) =>
     storyBlogIds.includes(blog.id)
   );
@@ -198,7 +198,7 @@ export default function WhatWeDoPage() {
                     size="lg"
                     radius="xl"
                     component={Link}
-                    to="/Fellowship-Program-app"
+                    to="/Avarna"
                     rightSection={<FaArrowRight />}
                     style={{
                       background:
@@ -207,7 +207,7 @@ export default function WhatWeDoPage() {
                       boxShadow: "0 15px 40px rgba(255,123,0,0.35)",
                     }}
                   >
-                    Apply Fellowship
+                    Explore Avarna
                   </Button>
 
                   <Button
@@ -257,6 +257,169 @@ export default function WhatWeDoPage() {
         </SimpleGrid>
       </Container>
 
+   {/* VIDEO SECTION */}
+
+   <Container size="xl" py={120}>
+        <Card
+          radius="40px"
+          p={0}
+          style={{
+            overflow: "hidden",
+            position: "relative",
+            background: "#000",
+            border: "1px solid rgba(255,255,255,0.08)",
+            boxShadow: "0 30px 80px rgba(0,0,0,0.35)",
+          }}
+        >
+          {/* TOP BADGE */}
+
+          <Box
+            style={{
+              position: "absolute",
+              top: 25,
+              left: 25,
+              zIndex: 20,
+              background: "rgba(255,255,255,0.12)",
+              backdropFilter: "blur(12px)",
+              padding: "10px 18px",
+              borderRadius: "999px",
+              border: "1px solid rgba(255,255,255,0.15)",
+            }}
+          >
+            <Text
+              c="white"
+              fw={600}
+              size="sm"
+              style={{
+                letterSpacing: "0.5px",
+              }}
+            >
+              🎥 Featured Documentary
+            </Text>
+          </Box>
+
+          {/* VIDEO WRAPPER */}
+
+          <Box
+            style={{
+              position: "relative",
+              paddingTop: "56.25%",
+              overflow: "hidden",
+            }}
+          >
+            {/* VIDEO */}
+
+            <iframe
+              src="https://www.youtube.com/embed/szoHB8dpaMs"
+              title="National Conference on End Manual Scavenging"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                border: "none",
+              }}
+            />
+
+            {/* DARK OVERLAY */}
+
+            <Box
+              style={{
+                position: "absolute",
+                inset: 0,
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.1) 100%)",
+                zIndex: 2,
+                pointerEvents: "none",
+              }}
+            />
+          </Box>
+
+          {/* CONTENT */}
+
+          <Box
+            style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 5,
+              padding: "clamp(20px,4vw,50px)",
+            }}
+          >
+            <Grid align="flex-end">
+              {/* LEFT */}
+
+              <Grid.Col span={{ base: 12, md: 8 }}>
+                <Text
+                  c="#ff9d3d"
+                  fw={700}
+                  mb={10}
+                  tt="uppercase"
+                  size="sm"
+                  style={{
+                    letterSpacing: "1px",
+                  }}
+                >
+                  Voices of Equality
+                </Text>
+
+                <Title
+                  c="white"
+                  style={{
+                    fontSize: "clamp(28px,5vw,58px)",
+                    lineHeight: 1.1,
+                    maxWidth: "850px",
+                  }}
+                >
+                  Stories From The Ground
+                </Title>
+
+                <Text
+                  c="rgba(255,255,255,0.75)"
+                  mt={18}
+                  maw={700}
+                  style={{
+                    lineHeight: 1.8,
+                    fontSize: "clamp(14px,2vw,18px)",
+                  }}
+                >
+                  Watch documentaries, leadership journeys, and powerful
+                  community stories from IISJ, MSC, and grassroots social
+                  justice movements across India.
+                </Text>
+              </Grid.Col>
+
+              {/* RIGHT */}
+
+              <Grid.Col span={{ base: 12, md: 4 }}>
+                <Group justify="flex-end">
+                  <Button
+                    size="lg"
+                    radius="xl"
+                    component="a"
+                    href="https://www.youtube.com/watch?v=szoHB8dpaMs"
+                    target="_blank"
+                    rightSection={<FaArrowRight size={14} />}
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
+
+                      boxShadow: "0 12px 30px rgba(255,123,0,0.35)",
+                    }}
+                  >
+                    Watch on YouTube
+                  </Button>
+                </Group>
+              </Grid.Col>
+            </Grid>
+          </Box>
+        </Card>
+      </Container>
+      
       {/* INITIATIVES */}
 
       <Container size="xl" py={100}>
@@ -432,12 +595,12 @@ export default function WhatWeDoPage() {
                 radius="xl"
                 color="dark"
                 component={Link}
-                to="/Fellowship-Program-app"
+                // to="/Fellowship-Program-app"
               >
-                Apply Now
+                Comming Soon
               </Button>
 
-              <Button
+              {/* <Button
                 size="lg"
                 radius="xl"
                 variant="white"
@@ -445,7 +608,7 @@ export default function WhatWeDoPage() {
                 to="/Fellowship-Equality"
               >
                 Explore Fellowship
-              </Button>
+              </Button> */}
             </Group>
           </Stack>
         </Container>
@@ -613,169 +776,6 @@ export default function WhatWeDoPage() {
             </Box>
           </Group>
         </Paper>
-      </Container>
-
-      {/* VIDEO SECTION */}
-
-      <Container size="xl" py={120}>
-        <Card
-          radius="40px"
-          p={0}
-          style={{
-            overflow: "hidden",
-            position: "relative",
-            background: "#000",
-            border: "1px solid rgba(255,255,255,0.08)",
-            boxShadow: "0 30px 80px rgba(0,0,0,0.35)",
-          }}
-        >
-          {/* TOP BADGE */}
-
-          <Box
-            style={{
-              position: "absolute",
-              top: 25,
-              left: 25,
-              zIndex: 20,
-              background: "rgba(255,255,255,0.12)",
-              backdropFilter: "blur(12px)",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              border: "1px solid rgba(255,255,255,0.15)",
-            }}
-          >
-            <Text
-              c="white"
-              fw={600}
-              size="sm"
-              style={{
-                letterSpacing: "0.5px",
-              }}
-            >
-              🎥 Featured Documentary
-            </Text>
-          </Box>
-
-          {/* VIDEO WRAPPER */}
-
-          <Box
-            style={{
-              position: "relative",
-              paddingTop: "56.25%",
-              overflow: "hidden",
-            }}
-          >
-            {/* VIDEO */}
-
-            <iframe
-              src="https://www.youtube.com/embed/szoHB8dpaMs"
-              title="National Conference on End Manual Scavenging"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                border: "none",
-              }}
-            />
-
-            {/* DARK OVERLAY */}
-
-            <Box
-              style={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.1) 100%)",
-                zIndex: 2,
-                pointerEvents: "none",
-              }}
-            />
-          </Box>
-
-          {/* CONTENT */}
-
-          <Box
-            style={{
-              position: "absolute",
-              left: 0,
-              right: 0,
-              bottom: 0,
-              zIndex: 5,
-              padding: "clamp(20px,4vw,50px)",
-            }}
-          >
-            <Grid align="flex-end">
-              {/* LEFT */}
-
-              <Grid.Col span={{ base: 12, md: 8 }}>
-                <Text
-                  c="#ff9d3d"
-                  fw={700}
-                  mb={10}
-                  tt="uppercase"
-                  size="sm"
-                  style={{
-                    letterSpacing: "1px",
-                  }}
-                >
-                  Voices of Equality
-                </Text>
-
-                <Title
-                  c="white"
-                  style={{
-                    fontSize: "clamp(28px,5vw,58px)",
-                    lineHeight: 1.1,
-                    maxWidth: "850px",
-                  }}
-                >
-                  Stories From The Ground
-                </Title>
-
-                <Text
-                  c="rgba(255,255,255,0.75)"
-                  mt={18}
-                  maw={700}
-                  style={{
-                    lineHeight: 1.8,
-                    fontSize: "clamp(14px,2vw,18px)",
-                  }}
-                >
-                  Watch documentaries, leadership journeys, and powerful
-                  community stories from IISJ, MSC, and grassroots social
-                  justice movements across India.
-                </Text>
-              </Grid.Col>
-
-              {/* RIGHT */}
-
-              <Grid.Col span={{ base: 12, md: 4 }}>
-                <Group justify="flex-end">
-                  <Button
-                    size="lg"
-                    radius="xl"
-                    component="a"
-                    href="https://www.youtube.com/watch?v=szoHB8dpaMs"
-                    target="_blank"
-                    rightSection={<FaArrowRight size={14} />}
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #ff7b00 0%, #ff9d3d 100%)",
-
-                      boxShadow: "0 12px 30px rgba(255,123,0,0.35)",
-                    }}
-                  >
-                    Watch on YouTube
-                  </Button>
-                </Group>
-              </Grid.Col>
-            </Grid>
-          </Box>
-        </Card>
       </Container>
     </Box>
   );

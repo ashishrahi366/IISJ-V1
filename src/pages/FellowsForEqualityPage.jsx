@@ -31,7 +31,7 @@ import FF2 from "../assets/pages/mvv2.webp";
 import FS3 from "../assets/pages/FS3.jpg";
 
 function FellowsForEqualityPage() {
-  const successStoryIds = [1, 3, 5];
+  const successStoryIds = [2, 3, 5];
   const successStories = blogsData.filter((blog) =>
     successStoryIds.includes(blog.id)
   );
@@ -604,13 +604,13 @@ function FellowsForEqualityPage() {
             <Group justify="center" mt={40}>
               <Button
                 component={Link}
-                to="/Fellowship-Program-app"
+                // to="/Fellowship-Program-app"
                 size="lg"
                 radius="xl"
                 color="orange"
                 rightSection={<FaArrowRight size={14} />}
               >
-                Apply Now
+                Comming Soon
               </Button>
             </Group>
           </motion.div>
@@ -884,20 +884,20 @@ function FellowsForEqualityPage() {
               </Text>
 
               <Text c="rgba(255,255,255,0.7)" size="sm" mt={4} lh={1.6}>
-                Applications are now open for the Fellows For Equality
+                Applications will open for the Fellows For Equality
                 leadership program.
               </Text>
 
               <Button
                 component={Link}
-                to="/Fellowship-Program-app"
+                // to="/Fellowship-Program-app"
                 color="orange"
                 radius="xl"
                 fullWidth
                 mt="md"
                 rightSection={<FaArrowRight size={14} />}
               >
-                Apply Now
+                Comming Soon
               </Button>
             </Box>
           </Group>

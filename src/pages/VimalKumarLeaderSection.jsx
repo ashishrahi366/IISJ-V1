@@ -27,7 +27,7 @@ import about3 from "../assets/pages/about3.JPG";
 import vimal1 from "../assets/pages/vimal1.jpeg";
 import leader13 from "../assets/home/leader13.webp";
 import leader12 from "../assets/home/leader12.jpg";
-import Vimalpic2 from "../assets/home/Vimalpic2.jpg";
+import Vimalpic2 from "../assets/pages/VimalLeaderNew.jpeg";
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);

@@ -10,6 +10,12 @@ import wwd4 from "../assets/pages/wwd4.webp";
 import wwd2 from "../assets/pages/wwd2.webp";
 import mvv2 from "../assets/pages/mvv2.webp";
 
+
+
+
+import IISJ_OMG from "../assets/home/IISJ_OMG.jpeg";
+import imapcted from "../assets/MSC/imapcted.webp";
+
 export const communityGallery = [
     {
         id: 1,
@@ -24,84 +30,120 @@ export const communityGallery = [
         image: `${HWPO1jpg}`,
         type: "image",
         category: "community",
+    },
+    {
+        id: 3,
+        title: "Awareness Program",
+        image: `${IISJ_OMG}`,
+        type: "image",
+        category: "community",
+    },
+    {
+        id: 4,
+        title: "Grassroots Awareness Program",
+        image: `${imapcted}`,
+        type: "image",
+        category: "community",
     }
 ];
+
+import Gedu1 from "../assets/pages/Gedu1.jpeg";
+import Gedu2 from "../assets/pages/Gedu2.jpeg";
+import mvv1 from "../assets/pages/mvv1.webp";
+import Gedu3 from "../assets/pages/Gedu3.jpeg";
+
+
 export const educationGallery = [
     {
         id: 5,
         title: "Digital Learning Session",
-        image: `${HWPO}`,
+        image: `${Gedu1}`,
         type: "image",
         category: "education",
     },
     {
         id: 6,
-        title: "Scholarship Orientation",
-        image: `${HWPO1jpg}`,
+        title: "Orientation",
+        image: `${Gedu2}`,
         type: "image",
         category: "education",
-    }
-];
-export const eventGallery = [
-    {
-        id: 9,
-        title: "National Youth Summit",
-        image: "https://picsum.photos/800/1000?random=9",
-        type: "image",
-        category: "events",
     },
     {
-        id: 10,
-        title: "Social Justice Conference",
-        image: "https://picsum.photos/800/1200?random=10",
+        id: 7,
+        title: "Education",
+        image: `${mvv1}`,
         type: "image",
-        category: "events",
+        category: "education",
     },
     {
-        id: 11,
-        title: "Public Awareness Rally",
-        image: "https://picsum.photos/800/1100?random=11",
+        id: 8,
+        title: "Orientation",
+        image: `${Gedu3}`,
         type: "image",
-        category: "events",
-    },
-    {
-        id: 12,
-        title: "Volunteer Meetup",
-        image: "https://picsum.photos/800/1000?random=12",
-        type: "image",
-        category: "events",
+        category: "education",
     },
 ];
-export const impactGallery = [
-    {
-        id: 13,
-        title: "Community Transformation",
-        image: "https://picsum.photos/800/1200?random=13",
-        type: "image",
-        category: "impact",
-    },
-    {
-        id: 14,
-        title: "Youth Leadership Journey",
-        image: "https://picsum.photos/800/1000?random=14",
-        type: "image",
-        category: "impact",
-    },
-    {
-        id: 15,
-        title: "Grassroots Innovation",
-        image: "https://picsum.photos/800/1100?random=15",
-        type: "image",
-        category: "impact",
-    },
-    {
-        id: 16,
-        title: "Community Success Story",
-        image: "https://picsum.photos/800/1000?random=16",
-        type: "image",
-        category: "impact",
-    },
-];
+// export const eventGallery = [
+//     {
+//         id: 9,
+//         title: "National Youth Summit",
+//         image: "https://picsum.photos/800/1000?random=9",
+//         type: "image",
+//         category: "events",
+//     },
+//     {
+//         id: 10,
+//         title: "Social Justice Conference",
+//         image: "https://picsum.photos/800/1200?random=10",
+//         type: "image",
+//         category: "events",
+//     },
+//     {
+//         id: 11,
+//         title: "Public Awareness Rally",
+//         image: "https://picsum.photos/800/1100?random=11",
+//         type: "image",
+//         category: "events",
+//     },
+//     {
+//         id: 12,
+//         title: "Volunteer Meetup",
+//         image: "https://picsum.photos/800/1000?random=12",
+//         type: "image",
+//         category: "events",
+//     },
+// ];
+// export const impactGallery = [
+//     {
+//         id: 13,
+//         title: "Community Transformation",
+//         image: "https://picsum.photos/800/1200?random=13",
+//         type: "image",
+//         category: "impact",
+//     },
+//     {
+//         id: 14,
+//         title: "Youth Leadership Journey",
+//         image: "https://picsum.photos/800/1000?random=14",
+//         type: "image",
+//         category: "impact",
+//     },
+//     {
+//         id: 15,
+//         title: "Grassroots Innovation",
+//         image: "https://picsum.photos/800/1100?random=15",
+//         type: "image",
+//         category: "impact",
+//     },
+//     {
+//         id: 16,
+//         title: "Community Success Story",
+//         image: "https://picsum.photos/800/1000?random=16",
+//         type: "image",
+//         category: "impact",
+//     },
+// ];
+
 export const homeGalleryData = [
     {
         title: "Community Leadership Program",
@@ -129,9 +171,11 @@ export const homeGalleryData = [
         image: leader13,
     },
 ];
+
+import ABTG1 from "../assets/pages/ABTG1.jpeg"
 export const aboutusGalleryImages = [
     {
-        image: wwd4,
+        image: ABTG1,
         title: "Leadership Workshops",
     },
     {

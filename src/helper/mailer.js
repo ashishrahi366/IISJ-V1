@@ -12,9 +12,6 @@ const PUBLIC_KEY = VITE_EMAILJS_PUBLIC_KEY;
 
 export const sendEmail = async (formData) => {
     try {
-        // Send email to IISJ Admin
-        // console.log(formData, "formData")
-        // console.log("Sending Admin Email");
         await emailjs.send(
             SERVICE_ID,
             ADMIN_TEMPLATE_ID,
@@ -27,11 +24,6 @@ export const sendEmail = async (formData) => {
             },
             PUBLIC_KEY
         );
-
-        // console.log("Admin Email Sent");
-
-        // console.log("Sending Auto Reply");
-        // Send auto reply to user
         await emailjs.send(
             SERVICE_ID,
             AUTO_REPLY_TEMPLATE_ID,

@@ -50,15 +50,17 @@ const projectsLinks = [
     label: "IISJ",
     path: "/iisj",
   },
-
-  {
-    label: "Fellowship Program",
-    path: "/Fellowship-Equality",
-  },
-
   {
     label: "Support MSC",
     path: "/Support-MSC",
+  },
+  {
+    label: "Events",
+    path: "/Events",
+  },
+  {
+    label: "Our-Projects",
+    path: "/Our-Projects",
   },
 ];
 

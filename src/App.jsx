@@ -43,17 +43,17 @@ function App() {
         <Route path="/What-We-Do" element={<WhatWeDoPage />} />
         <Route path="/Our-Projects" element={<OurProjectsPage />} />
         <Route path="/Team" element={<TeamPage />} />
-        <Route path="/Team" element={<TeamPage />} />
+        {/* <Route path="/Team" element={<TeamPage />} /> */}
         <Route path="/Events" element={<EventsPage />} />
         <Route path="/blogs/:slug" element={<BlogDetails />} />
         <Route path="/Vimal-Kumar" element={<VimalKumarLeaderSection />} />
         <Route path="/Support-MSC" element={<SupportMSCPage />} />
         <Route path="/Second-Wind" element={<SecondWindSection />} />
         <Route path="*" element={<NotFound />} />
-        <Route
+        {/* <Route
           path="/Fellowship-Program-app"
           element={<FellowshipProgramPage />}
-        />
+        /> */}
         <Route
           path="/Fellowship-Equality"
           element={<FellowsForEqualityPage />}

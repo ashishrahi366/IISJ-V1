@@ -27,6 +27,8 @@ import { FaArrowRight, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 import { getBlogsByIds } from "../utils/methods";
 import heroImg from "../assets/home/heroHome4.webp";
+
+
 const upcomingEvents = [
   //   {
   //     title: "National Leadership Workshop 2026",
@@ -37,7 +39,7 @@ const upcomingEvents = [
   //   },
 ];
 
-const pastEvents = getBlogsByIds([1, 2, 3]);
+const pastEvents = getBlogsByIds([4, 2, 3]);
 
 function EventsPage() {
   return (
