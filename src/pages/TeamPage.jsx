@@ -19,6 +19,7 @@ import {
 import { FaArrowRight, FaUsers, FaLinkedin } from "react-icons/fa";
 import { useDisclosure } from "@mantine/hooks";
 import LeaderProfileModal from "../component/ui/LeaderProfileModal";
+import AdvisoryBoardSection from "../component/ui/AdvisoryBoardSection";
 import { useState } from "react";
 
 import { motion } from "framer-motion";
@@ -180,6 +181,8 @@ function TeamPage() {
           </motion.div>
         </Container>
       </Box>
+
+      <AdvisoryBoardSection />
 
       {/* TEAM SECTION */}
 
