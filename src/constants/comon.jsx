@@ -203,6 +203,7 @@ export const programs = [
 ];
 
 import infoImg from "../assets/home/infoImg1.webp";
+import Howrah from "../assets/MSC/Howrah-2.jpg";
 import projectImg from "../assets/home/infoImg2.webp";
 import involvedImg from "../assets/home/infoImg3.jpeg";
 export const homeQuickAccessCard = [
@@ -210,7 +211,7 @@ export const homeQuickAccessCard = [
     title: "Information",
     description:
       "Explore our initiatives, stories, reports, research, and community-driven impact across India.",
-    image: infoImg,
+    image: Howrah,
     icon: <FaFolderOpen size={24} />,
     link: "/MSC-Detail",
     color: "#2563eb",

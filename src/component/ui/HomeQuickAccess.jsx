@@ -149,9 +149,8 @@ export default function HomeQuickAccess() {
                       <Title
                         order={3}
                         style={{
-                          // color: "#330cf7",
                           color: "white",
-                          fontWeight: 800,
+                          fontWeight: 1000,
                         }}
                       >
                         {item.title}

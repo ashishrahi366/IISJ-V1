@@ -35,8 +35,6 @@ const Home = () => {
             <WhyIISJ/>
             {/* <EcosystemStats/> */}
             {/* <InitiativeCard/> */}
-
-
             <HeroCarousel/>
             {/* <MSCOverview/> */}
             <HomeQuickAccess/>

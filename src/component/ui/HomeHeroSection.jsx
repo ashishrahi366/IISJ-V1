@@ -12,7 +12,6 @@ import {
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/Logomark_Digital.png";
 import logo from "../../assets/home/Logo-Full.png";
 import mainHero1 from "../../assets/home/TestHomepage.jpeg";
 import mainHero2 from "../../assets/home/heroTest.avif";
@@ -104,22 +103,6 @@ export default function HomeHeroSection() {
                   </Text>
                 </Box>
               </Group>
-              {/* HEADING */}
-              {/* <Title
-                order={1}
-                c="white"
-                fw={900}
-                style={{
-                  fontSize: "clamp(2.5rem, 6vw, 4.8rem)",
-                  lineHeight: 1.08,
-                }}
-              >
-                Building Hope
-                <br />
-                Through Social
-                <br />
-                Justice & Action
-              </Title> */}
               {/* CONTENT */}
               <Text
                 c="gray.3"
