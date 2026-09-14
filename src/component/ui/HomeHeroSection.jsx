@@ -18,7 +18,7 @@ import { FaArrowRight, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/home/Logo-Full.png";
+import logo from "../../assets/home/IISJ_Logo-Full.png";
 import mainHero1 from "../../assets/home/TestHomepage.jpeg";
 import mainHero2 from "../../assets/home/heroTest.avif";
 
@@ -26,7 +26,6 @@ const MotionBox = motion(Box);
 
 export default function HomeHeroSection() {
   const [showMore, setShowMore] = useState(false);
-
 
   return (
     <Box
@@ -103,21 +102,32 @@ export default function HomeHeroSection() {
               }}
             >
               {/* LOGO */}
+              <Group mb="xl" gap="lg" align="center" wrap="nowrap">
+                {/* LOGO */}
+                <Box
+                  style={{
+                    width: 110,
+                    height: 110,
+                    flexShrink: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={logo}
+                    alt="International Institute for Social Justice Logo"
+                    fit="contain"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      imageRendering: "auto",
+                    }}
+                  />
+                </Box>
 
-              <Group
-                mb="xl"
-                gap="lg"
-                align="center"
-                wrap="nowrap"
-              >
-                <Image
-                  src={logo}
-                  alt="IISJ Logo"
-                  w={110}
-                  h={110}
-                  fit="contain"
-                />
-
+                {/* TEXT */}
                 <Box>
                   <Text
                     c="orange.4"
@@ -132,19 +142,11 @@ export default function HomeHeroSection() {
                     International Institute for Social Justice
                   </Text>
 
-                  <Text
-                    c="gray.4"
-                    size="md"
-                    mt={6}
-                  >
+                  <Text c="gray.4" size="md" mt={6}>
                     Education • Leadership • Entrepreneurship • Mental Health
                   </Text>
                 </Box>
               </Group>
-
-              {/* ========================= */}
-              {/* FIRST DESCRIPTION */}
-              {/* ========================= */}
 
               <Text
                 c="gray.3"
@@ -157,15 +159,11 @@ export default function HomeHeroSection() {
               >
                 The International Institute for Social Justice (IISJ) is the
                 umbrella institution bringing together specialized initiatives
-                advancing education, leadership, research, entrepreneurship,
-                and social justice for historically marginalized communities
-                across the world.
+                advancing education, leadership, research, entrepreneurship, and
+                social justice for historically marginalized communities across
+                the world.
               </Text>
-
-              {/* ========================= */}
               {/* READ MORE SECTION */}
-              {/* ========================= */}
-
               <AnimatePresence initial={false}>
                 {showMore && (
                   <MotionBox
@@ -200,19 +198,19 @@ export default function HomeHeroSection() {
                         lineHeight: 1.8,
                       }}
                     >
-                      Through its flagship initiatives — Movement for
-                      Scavenger Community (MSC), Avarna Education & Training
-                      Foundation, and The Second Wind — IISJ transforms
-                      grassroots efforts into sustainable social change. MSC
-                      advances community empowerment, dignity, and justice for
-                      sanitation workers and scavenger communities through
-                      advocacy, education, and community resource centres.
-                      Avarna builds pathways for educational access,
-                      fellowships, leadership development, entrepreneurship,
-                      and professional training. The Second Wind promotes
-                      social innovation, inclusive entrepreneurship, consulting,
-                      and sustainable economic opportunities that empower
-                      individuals and communities to thrive.
+                      Through its flagship initiatives — Movement for Scavenger
+                      Community (MSC), Avarna Education & Training Foundation,
+                      and The Second Wind — IISJ transforms grassroots efforts
+                      into sustainable social change. MSC advances community
+                      empowerment, dignity, and justice for sanitation workers
+                      and scavenger communities through advocacy, education, and
+                      community resource centres. Avarna builds pathways for
+                      educational access, fellowships, leadership development,
+                      entrepreneurship, and professional training. The Second
+                      Wind promotes social innovation, inclusive
+                      entrepreneurship, consulting, and sustainable economic
+                      opportunities that empower individuals and communities to
+                      thrive.
                     </Text>
                   </MotionBox>
                 )}
@@ -262,12 +260,9 @@ export default function HomeHeroSection() {
                   radius="xl"
                   color="orange"
                   px={30}
-                  rightSection={
-                    <FaArrowRight size={14} />
-                  }
+                  rightSection={<FaArrowRight size={14} />}
                   style={{
-                    boxShadow:
-                      "0 10px 30px rgba(255,123,0,0.3)",
+                    boxShadow: "0 10px 30px rgba(255,123,0,0.3)",
                   }}
                 >
                   Explore IISJ
@@ -307,18 +302,12 @@ export default function HomeHeroSection() {
                   style={{
                     overflow: "hidden",
                     borderRadius: 32,
-                    border:
-                      "1px solid rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.08)",
                     backdropFilter: "blur(20px)",
-                    boxShadow:
-                      "0 20px 60px rgba(0,0,0,0.35)",
+                    boxShadow: "0 20px 60px rgba(0,0,0,0.35)",
                   }}
                 >
-                  <Image
-                    src={mainHero1}
-                    h={520}
-                    fit="cover"
-                  />
+                  <Image src={mainHero1} h={520} fit="cover" />
                 </Box>
 
                 {/* FLOATING CARD */}
@@ -331,36 +320,22 @@ export default function HomeHeroSection() {
                     left: -25,
                     width: 240,
                     borderRadius: 24,
-                    background:
-                      "rgba(255,255,255,0.1)",
+                    background: "rgba(255,255,255,0.1)",
                     backdropFilter: "blur(18px)",
-                    border:
-                      "1px solid rgba(255,255,255,0.1)",
+                    border: "1px solid rgba(255,255,255,0.1)",
                   }}
                 >
-                  <Text
-                    c="orange.3"
-                    fw={700}
-                    size="sm"
-                  >
+                  <Text c="orange.3" fw={700} size="sm">
                     Community Impact
                   </Text>
 
-                  <Title
-                    order={3}
-                    c="white"
-                    mt={5}
-                  >
+                  <Title order={3} c="white" mt={5}>
                     20K+
                   </Title>
 
-                  <Text
-                    c="gray.3"
-                    size="sm"
-                    mt={4}
-                  >
-                    Lives impacted through education,
-                    leadership, and community initiatives.
+                  <Text c="gray.3" size="sm" mt={4}>
+                    Lives impacted through education, leadership, and community
+                    initiatives.
                   </Text>
                 </Box>
               </Box>
